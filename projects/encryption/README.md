@@ -18,6 +18,7 @@ include the entire conversation - the messages that you sent
 and the messages that you received.
 
 | Encoded Message | Decoded Message | Key |
+|---|---|---|
 |pmttw|Hello | 8 |
 |            Ymfspx ktw itnsl ymj yjxy ytifd!   |       Thanks for doing the test today!          | 5  |
 |         Pdwjgo bkn happejc ia pwga ep!|Thanks for letting me take it!| 22 |

@@ -1,0 +1,21 @@
+table, td, tr,th{
+	border: 2px solid black;
+  border-collapse: collapse;
+  background-color: DarkGreen;
+  }
+  h1{
+	  text-decoration: underline;
+	  background-color: Chartreuse
+  }
+ body{
+ background-color: DarkGreen;
+ }
+ #info{
+	 background-color: Green;
+ }
+ .highlight{
+background-color: Chartreuse;
+}
+#quickguide{
+	text-decoration: underline;
+}

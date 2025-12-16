@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script src="../js/validate.js"></script>
+		<title>A Pretty Tree</title>
+<style>
+body {
+	background: linear-gradient(to bottom, orange, red);
+height: 100vw;
+}
+#container {
+	position: relative;
+	width: 600px;
+	height: 800px;
+	display: block;
+	margin: auto;
+}
+#tree {
+	width: 0px;
+	height: 0px;
+	border-bottom: 800px solid green;
+	border-left: 300px solid transparent;
+	border-right: 300px solid transparent;
+}
+#box {
+	position: absolute;
+	background-image: linear-gradient(to bottom, purple, blue);
+	width: 20px;
+	height: 20px;
+	left: 200px;
+	top: 500px;
+}
+
+#hexagon {
+ position: absolute;
+ height: 33px; /* adjust to control the size  */
+  aspect-ratio: 1/cos(30deg);
+  clip-path: polygon(50% -50%,100% 50%,50% 150%,0 50%);
+  background-image: linear-gradient(to bottom, #3B8686, #008686);
+  left: 350px;
+  top: 330px;
+}
+#squircle {
+  position: absolute;
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  corner-shape: squircle;
+  background-image: linear-gradient(to bottom, #8458ff, #845800);
+  left: 400px;
+  top: 400px;
+}
+#star {
+	position: absolute;
+	background-image: linear-gradient(to bottom, blue, red);
+	left: 300px;
+	top: 300px;
+	width: 20px;
+	aspect-ratio: 1;
+	clip-path: polygon(50% 0,79% 90%,2% 35%,98% 35%,21% 90%);
+}
+#heart {
+       
+  height: 25px; /* adjust to control the size */
+  aspect-ratio: 1;
+  --_m: radial-gradient(#000 69%,#0000 70%) 84.5%/50%;
+  -webkit-mask-box-image: var(--_m);
+             mask-border: var(--_m);
+  clip-path: polygon(-41% 0,50% 91%, 141% 0); 
+  position: absolute;
+        background-image: linear-gradient(to bottom, yellow, blue);
+        left: 300px;
+        top: 250px;
+}
+</style>
+	</head>
+	<body>
+		<div id="container">
+		<div id="tree">
+			<div id="box">
+			</div>
+			<div id="squircle">
+			</div>
+			<div id="hexagon">
+			</div>
+			<div id="star">
+			</div>
+			<div id="heart">
+			</div>
+		</div>
+		</div>
+	</body>
+</html>

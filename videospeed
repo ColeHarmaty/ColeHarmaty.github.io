@@ -1,9 +1,0 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Speed</title>
-</head>
-<body>
-    <p>document.querySelector('video').playbackRate = 3.0;</p>
-</body>
-</html>

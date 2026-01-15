@@ -14,7 +14,7 @@ Added skelton of page1.html.
 
 ## Day 4 - 1/15/26
 
-Got client from Mr. Jones, met with client.
+Got client from Mr. Jones, it is Dr. Thomas. I sent an email asking to meet up on Friday.
 
 ## Day 5 - 1//26
 

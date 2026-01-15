@@ -59,4 +59,4 @@ We'll use this to inform our study plan for the test.
 
 ## Study Plan
 
-(We'll start filling this part in next class)
+I will study Aria Roles. (We'll start filling this part in next class)

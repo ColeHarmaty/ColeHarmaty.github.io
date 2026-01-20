@@ -16,9 +16,9 @@ Added skelton of page1.html.
 
 Got client from Mr. Jones, it is Dr. Thomas. I sent an email asking to meet up on Friday.
 
-## Day 5 - 1//26
+## Day 5 - 1/20/26
 
-
+The meeting on Friday fell through. Met with Dr. Thomas. Got info on pages. Built all pages, now missing images and descriptions.
 
 ## Day 6 - 1//26
 

@@ -6,7 +6,7 @@
 <style>
 .grid {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	grid-template-rows: 2fr 1fr 7fr;
 }
 .top {
@@ -42,8 +42,14 @@ place-self: center;
 		grid-row: 2/2;
 place-self: center;
 }
+.PBL {
+	grid-column-start: 5;
+                  grid-column-end: span 1;
+                  grid-row: 2/2;
+ place-self: center;
+}
 .bigimage {
-	grid-column: 1/5;
+	grid-column: 1/6;
 	grid-row: 3/4;
 }
 </style>
@@ -54,17 +60,20 @@ place-self: center;
 		    <h1>Title</h1>
 	    </div>
 	    <div class="button1">
-		    <a href="page.html">link to page</a>
+		    <a href="/page1.html">9th Grade Project</a>
 	    </div>
    <div class="button2">                                                
-           <a href="page.html">link to page</a>  
+           <a href="/page2.html">10th Grade Project</a>  
    </div>
    <div class="button3">                                                
-   <a href="page.html">link to page</a>  
+   <a href="/page3.html">11th Grade Project</a>  
    </div>
     <div class="button4">
-   <a href="page.html">link to page</a>  
+   <a href="/page4.html">12th Grade Project</a>  
     </div>
+   <div class="PBL">                                                        
+   <a href="/page5.html">What is PBL?</a>                                         
+   </div> 
     <div class="bigimage">
 	    <img src="media/bigimage.jpg" alt="placeholder" width="100%" height="100%">
     </div>

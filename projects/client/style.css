@@ -2,3 +2,18 @@
 	text-align: center;
 	font-weight: bold;
 }
+.h1 {
+	font-weight: bold;
+	text-align: center;
+	background-color: forestgreen;
+	width: 100%;
+}
+.a {
+font-weight: bold;
+text-align: center;
+background-color: forestgreen;
+width: 20%;
+text-decoration: none;
+font-size: medium;
+}
+

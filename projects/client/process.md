@@ -18,8 +18,16 @@ Got client from Mr. Jones, it is Dr. Thomas. I sent an email asking to meet up o
 
 ## Day 5 - 1/20/26
 
-The meeting on Friday fell through. Met with Dr. Thomas. Got info on pages. Built all pages, now missing images and descriptions.
+The meeting on Friday fell through. Met with Dr. Thomas in person. Got info on pages. Built all pages, now missing images and descriptions.
 
-## Day 6 - 1//26
+## Day 6 - 1/22/26
+
+Prettied up pages sent request for images to Dr. Thomas.
+
+## Day 7 - 1/2/26
+
+
+
+## Day 8 - 1/2/26
 
 

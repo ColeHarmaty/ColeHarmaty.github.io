@@ -24,9 +24,9 @@ The meeting on Friday fell through. Met with Dr. Thomas in person. Got info on p
 
 Prettied up pages sent request for images to Dr. Thomas. Met with Dr. Thomas in person during lunch. She was happy with my progress. I added the image to page5.html and edited some more stuff.
 
-## Day 7 - 1/2/26
+## Day 7 - 1/23/26
 
-
+fixed index links
 
 ## Day 8 - 1/2/26
 

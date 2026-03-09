@@ -161,11 +161,25 @@ tell their story. I can’t save them. I can save myself, and my poor chimps. I 
 
 to think faster than I should because everything is barely moving. My head hurts, I can’t keep 
 
-this up for much longer. 
+this up for much longer. All that is left is to reach the pilot helm and escape.
 
-Location: Hallway to bathroom.
+I know that I can do it.
 
-Story summary: A man tries to survive a tragedy aboard a spaceship.
+There's just one promblem: I can't remember where anything is.
+
+Whatever the heck happened scrambled my brain. 
+
+## Story Summary
+
+A man tries to survive a tragedy aboard a spaceship, and reach the pilots helm to escape the Void.
+
+## Locations
+
+### Cafeteria
+
+Where you start off the story. It is where you have two options, run or let the power in your head out.
+
+
 Options: 
 
 1. Let the power that I feel in my head out(Outcome: Corruption +1)

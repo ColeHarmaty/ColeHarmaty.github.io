@@ -7,6 +7,8 @@ Time= The story's progress bar towards the worst ending, high= bad.
 
 DIdYouRember the monkeys?=if you left the monkeys behind, you get torn apart by insane chimps
 
+PsionicsUsed= Did you use psionics, influences ending
+
 ## Explanation of the setting.
 
 It is the year 2100. Humanity has colonized the solar system. We are running out of space on 
@@ -167,12 +169,43 @@ I know that I can do it.
 
 There's just one promblem: I can't remember where anything is.
 
-Whatever the heck happened scrambled my brain. 
+Whatever the heck happened scrambled my brain. Oh, and the gaint tentacle
+
+monsters. Those are also a promblem.
 
 ## Story Summary
 
-A man tries to survive a tragedy aboard a spaceship, and reach the pilots helm to escape the Void.
+A man tries to survive a tragedy aboard a spaceship, and reach the pilots helm to escape the Void. There are multiple endings.
 
+### Ending1- Good Ending
+
+Requires: Psionics, minimal corruption, you helped the chimps.
+
+Outcome: You get out relativly unscathed, psionics discovered, 
+
+### Ending 2 - Really Bad End
+
+Requires: Corruption maxed
+
+Outcome: Go crazy in the void
+
+### Ending 3 - Eaten by insane chimps
+
+You didn't help the chimps. You deserve what you got.
+
+### Ending 4 - Moderate Ending(Psionics)
+
+Psionics true, extra corruption
+
+Outcome: Humanity discovers psionics. You have something to live for
+
+Something that keeps you sane in the void. You spend the rest of your
+
+days studying psionics.
+
+### Ending 5 - Moderate ending
+
+Helped the chimps.
 ## Locations
 
 ### Cafeteria
@@ -182,11 +215,25 @@ Where you start off the story. It is where you have two options, run or let the 
 
 Options: 
 
-1. Let the power that I feel in my head out(Outcome: Corruption +1)
+1. Let the power that I feel in my head out, leave in a daze(Outcome: Corruption +1)
 
-2. Run(Outcome: The creatures smash key equipment, extra time taken for repairs, the chimps 
+2. Run(Outcome: The creatures smash the void sheild generator, extra time taken for repairs, the chimps 
 
 save you.Corruption +3)
+
+Connects to: Hallway
+
+### Hallway
+
+The hallway between the 
+
+Connects to: Cafeteria(False), Chimp area(true)
+
+#### Note
+
+If one tries to renter the cafeteria, get a traumatic flashback, and your charecter returns to 
+
+### Medbay
 
 In a daze you wander to the medical bay check on chimps
 

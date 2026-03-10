@@ -69,7 +69,7 @@ enough. Then, just as we were about to give up on the Voidshift drive, a miracle
 
 One of the probes took a path that required 1% less distance in void space than it did in real 
 
-Space.
+space.
 
 Two minutes ago, the Prometheus activated its drive. When we opened up the probe, we saw 
 

@@ -5,7 +5,7 @@
 
 Time= The story's progress bar towards the worst ending, high= bad.
 
-DIdYouRember the monkeys?=if you left the monkeys behind, you get torn apart by insane chimps
+ChimpsSaved?=if you left the monkeys behind, you get torn apart by insane chimps
 
 PsionicsUsed= Did you use psionics, influences ending
 
@@ -206,6 +206,7 @@ days studying psionics.
 ### Ending 5 - Moderate ending
 
 Helped the chimps.
+
 ## Locations
 
 ### Cafeteria
@@ -233,7 +234,7 @@ Connects to: Cafeteria(False), Chimp area(true)
 
 If one tries to renter the cafeteria, get a traumatic flashback, and your charecter returns to 
 
-### Medbay
+### Chimp Area
 
 In a daze you wander to the medical bay check on chimps
 

@@ -125,7 +125,7 @@ waitThenCall(Hallway);
 function ChimpZone() {
 clear();
 timecheck();                                                            
-    print("\nYou are in the ChimpZone! The Chimps live here and most of the \ntime, so do you. You are the one who takes care of the chimps, after all.\nEverything you could want to care for an injured chimp can be found here. Al\nthe chimps' supplies are here, from toys to toilets.");
+    print("\nYou are in the ChimpZone! The Chimps live here and most of the \ntime, so do you. You are the one who takes care of the chimps, after all.\nEverything you could want to care for an injured chimp can be found here. Al\nthe chimps' other supplies are also here, from toys to toilets. There is a booth\nacross the room where the chimps can pilot the ship from in the case of\nhumans turning out to be unable to navigate the Void. It requires permission codes\nto be activated, and you don't have all the codes nessecary to do so.\n\n\tUnfortunalty, even though the helm is almost certainly logged in,it still requires\nthose codes to activate the booth down here. You don't have enough time to jury-rig\na solution. Otherwise, you'd let the chimps do the job they were so good at,\nand get you out of here. The human helm is also significantly more complex than\nthe one down here, as it does other functions besides controlling the ship in\nthe Void. Otherwise, you'd be bringing a chimp with you to the helm.");
 	if (ChimpsSaved === "0"){
 		print("\nThere are four injured chimps in cages.");
 	}
@@ -176,19 +176,21 @@ StayHere();
 function Helm(){                                                            
         clear();
 	timecheck();
-print("\n"\n\n\tWhat do you want to do? Say one of these choices:" + "\nStay Here" + "\nGo back to the Hallway" + "Go to the Helm");
-function processInput(input){                                                   
-        if (input.toLowerCase === "go back to the hallway"){                    
-                Hallway();                                                      
-}                                                                               
-else if (input.toLowerCase === "go to the helm"){                               
-        Helm();                                                                 
-}                                                                               
+print("\nThe Helm. Where the ship is piloted from. Normally, you'd never be here.\nIn a world where the pilot wasn't dead, you wouldn't. The helm is blinking just\n as you predicted. It's still logged in. It looks familiar to you, just as you\nhoped. You've never done this before, never trained for it, but you've helped\nthe chimps do so enough to instantly identify most of the controls, and seen\nenough of the sims the chimps trained in to have an idea of what you need to\ndo to fly the ship."+"\n\nWhat do you want to do? Say one of these choices:" + "\nStay Here" + "\nGo back to the Reactor" + "fly the Ship");
+function processInput(input){
+	if (input.toLowerCase === "go back to the reactor"){
+                Reactor();
+	}
+	else if (input.toLowerCase === "fly the ship"){                               
+        Ending();
+	}                                                                               
 else{                                                                           
 StayHere();                                                                     
-        Reactor();                                                              
+        Helm();                                                              
 }                                                                               
 }
+}
+function Ending(){
 }
 //finally, make sure you customize this to tell it what should happen at the
 //very start. For this simple example, any input will bring you

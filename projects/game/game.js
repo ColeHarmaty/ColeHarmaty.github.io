@@ -142,14 +142,23 @@ function ChimpZone() {
             print"You try to step into the Cafeteria. But as you move to open the \ndoors, you flash back to the moment everyone you cared for, everyone but \n your\ndistant aquantances, died. You jump back from the door like you've been\n burned. You won't go back there. You're never going back there.";
 Hallway;
         } else {
-		if (input.toLowercase() ==="
+		if (input.toLowercase() === "
             stayHere();
             waitThenCall(locationB);
 //This checks time levels
 function timecheck(){
 	time += 1;
 }
-
+function ChimpZone() {
+clear();
+timecheck();                                                            
+    print("\nYou are in the ChimpZone! The Chimps live here and most of the \ntime, so do you. You are the one who takes care of the chimps, after all.\nEverything you could want to care for an injured chimp can be found here. Al\nthe chimps' supplies are here, from toys to toilets. There are four injured chimps in pages");
+	if(Magic > 0){
+		print("How did they get injured? They never left there cages.")
+	}
+	else{
+print("I didn't hallucinate the chimps saving me after all. They have the same\ninjuries that I saw them take in the cafeteria. But then, how did they get here,")
+    print("\nWhat do you want to do? Say one of these choices:" + "\nHelp The Chimps")
 
 //finally, make sure you customize this to tell it what should happen at the
 //very start. For this simple example, any input will bring you

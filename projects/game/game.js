@@ -7,7 +7,9 @@ let time = 0;
 let Magic = 0;
 
 //If you need, add any "helper" functions here
-                                                                                
+function timecheck(){
+	time =+ 1;
+}
 // This function prints text out to the terminal                                
 function print(text) { 
     const output = document.getElementById('output');                           
@@ -15,9 +17,8 @@ function print(text) {
     line.innerHTML = "<p>" + text + "</p>";                                     
     output.appendChild(line);                                                   
     output.scrollTop = output.scrollHeight;                                     
-}                                                                               
-                                                                                
-//this formats text inside a pre tag.                                           
+}
+	//this formats text inside a pre tag.                                           
 //it just makes sure that HTML doesn't mess with spacing                        
 //tip - ASCII art will need to escape any backslashes!                          
 //      so to print \, you'll need to say \\                                    
@@ -64,19 +65,9 @@ function waitForInput(handlerFunction){
                                                                                 
 function waitThenCall(target){                                                  
     setTimeout(target,2000);                                                    
-}                                                                               
-                                                                                
-function stayHere(){                                                            
-    print("\nsorry, I don't understand your input. I'll assume you " +          
-        "want to stay here");                                                                             
-//this adds press any key to continue to the end of a block of text and
-	//makes it work
-
-function anykey(a){
-	clear();
-	print("\n"+"\n--Press Any Key To Continue--");
-	waitForInput(processInput);
-	clear();
+}                                                                              
+function stayHere(){
+	print("\nsorry, I don't understand your input. I'll assume you " + "want to stay here");
 }
 //This is the function you should call in your game code. Its                   
 //input is a function that takes a string and decides what to do with it 
@@ -104,8 +95,7 @@ function Hallway() {
     clear();
 	timecheck();
     print("\nYou are in the Hallway, with the door to the cafeteria shut and sealed\n firmly behind you. From here, you can see the signs saying ChimpZone,\nCafeteria, and Reactor.");
-    print("\nWhere do you want to go next? Say one of these choices:" +
-        "\n\tCafeteria"+"\n\tChimpZone"+"Reactor");
+    print("\nWhat do you want to do next? Say one of these choices:" + "Stay Here"+"\n\tGo To Cafeteria"+"\n\tGo to ChimpZone"+"Go to Reactor");
     
     function processInput(input){
         if (input.toLowerCase() === "Cafeteria") {
@@ -114,53 +104,62 @@ time =+ 5;
 waitThenCall(Hallway);
         }
 	    else {
-	   function processInput(input)
 		   if (input.toLowerCase() === "chimpzone"){
-			   ChimpZone();}
+			   ChimpZone();
+		   }
 			   else {
-		   function processInput(input){
 			   if (input.toLowerCase() === "reactor"){
-				   Reactor();}
-
-	    (inp {
-            stayHere();
-            waitThenCall(locationB);
+				   Reactor();
+			   }
+			   else if (input.toLowerCase != "reactor"){
+				   StayHere();
+				   waitThenCall(Hallway);
+			   }
+	   
         }
     }
     waitForInput(processInput);
 }
 
-function ChimpZone() {
-    clear();
-        timecheck();
-    print("\nYou are in the ChimpZone! The Chimps live here and most of the \n time, so do you. You are the one who takes care of the chimps, after all.\n Everything you could want to care for an injured chimp can be found here All the chimps' supplies are here, from toys to toilets.");
-    print("\nWhere do you want to do? Say one of these choices:" +
-        "\n\tlocationA");
 
-    function processInput(input){
-        if (input.toLowerCase() === "cafeteria") {
-            print"You try to step into the Cafeteria. But as you move to open the \ndoors, you flash back to the moment everyone you cared for, everyone but \n your\ndistant aquantances, died. You jump back from the door like you've been\n burned. You won't go back there. You're never going back there.";
-Hallway;
-        } else {
-		if (input.toLowercase() === "
-            stayHere();
-            waitThenCall(locationB);
-//This checks time levels
-function timecheck(){
-	time += 1;
-}
 function ChimpZone() {
 clear();
 timecheck();                                                            
-    print("\nYou are in the ChimpZone! The Chimps live here and most of the \ntime, so do you. You are the one who takes care of the chimps, after all.\nEverything you could want to care for an injured chimp can be found here. Al\nthe chimps' supplies are here, from toys to toilets. There are four injured chimps in pages");
+    print("\nYou are in the ChimpZone! The Chimps live here and most of the \ntime, so do you. You are the one who takes care of the chimps, after all.\nEverything you could want to care for an injured chimp can be found here. Al\nthe chimps' supplies are here, from toys to toilets.");
+	if (ChimpsSaved === "0"){
+		print("\nThere are four injured chimps in cages.");
+	}
 	if(Magic > 0){
 		print("How did they get injured? They never left there cages.")
 	}
 	else{
 print("I didn't hallucinate the chimps saving me after all. They have the same\ninjuries that I saw them take in the cafeteria. But then, how did they get here,")
-    print("\nWhat do you want to do? Say one of these choices:" + "\nHelp The Chimps")
-
-//finally, make sure you customize this to tell it what should happen at the
+i	}
+	print("\nWhat do you want to do? Say one of these choices:" + "\nStay Here"+ "\nGo To Hallway");
+	if (ChimpsSaved === "0"){
+		print("\nHelp The Chimps")
+	}
+function processInput(input){
+	if (input.toLowerCase() === "help the chimps"){
+ChimpsSaved =+ 1;
+time--;
+print("You spend a few minutes cleaning out the chimps' wounds");
+	ChimpZone();
+	}
+	else if (input.toLowerCase() === "Hallway"){
+		Hallway();
+	}
+	else{
+	StayHere();
+	ChimpZone();
+	}
+function Reactor(){
+	clear();
+	timecheck();
+	print("\nYou are in the Reactor! This is where the ship's power");
+	print("\nis generated in a state of the art fusion reactor, and");
+print("\n where the ship's Void drive, currently powered down is. At least, that's\n what you've been told. For all");
+	//finally, make sure you customize this to tell it what should happen at the
 //very start. For this simple example, any input will bring you
 //to locationA
 function start(){

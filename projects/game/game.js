@@ -82,21 +82,22 @@ function Cafeteria() {
     function processInput(input){
         if (input.toLowerCase() === "run") {
 		time =+ 5;
-            locationB();
+		print("\nYou've never did any kind of sports, but pherhaps you should've\n 
+            Hallway();
         } else {
             Magic =+ 1;
-            waitThenCall(locationA);
+            ;
         }
     }
     waitForInput(processInput);
 }
 
-function locationB() {
+function Hallway() {
     clear();
-	timecheck;
-    print("\nYou are in location B!");
+	timecheck();
+    print("\nYou are in the Hallway, with the door to the cafeteria shut and sealed\n firmly behind you.");
     print("\nWhere do you want to go next? Say one of these choices:" +
-        "\n\tlocationA");
+        "\n\tCafeteria"+"\n\tChimpZone);
     
     function processInput(input){
         if (input.toLowerCase() === "locationa") {
@@ -110,6 +111,21 @@ function locationB() {
     waitForInput(processInput);
 }
 
+function ChimpZone() {
+    clear();
+        timecheck();
+    print("\nYou are in the ChimpZone! The Chimps live here and most of the \n time, so do you. You are the one who takes care of the chimps, after all.\n Everything you could want to care for an injured chimp can be found here All the chimps' supplies are here, from toys to toilets.");
+    print("\nWhere do you want to do? Say one of these choices:" +
+        "\n\tlocationA");
+
+    function processInput(input){
+        if (input.toLowerCase() === "cafeteria") {
+            print"You try to step into the Cafeteria. But as you move to open the \ndoors, you flash back to the moment everyone you cared for, everyone but \n your\ndistant aquantances, died. You jump back from the door like you've been\n burned. You won't go back there. You're never going back there.";
+Hallway;
+        } else {
+		if (input.toLowercase() ==="
+            stayHere();
+            waitThenCall(locationB);
 //This checks time levels
 function timecheck(){
 	time += 1;
@@ -123,7 +139,7 @@ function start(){
     print("The first manned FTL test. Of course something like this would happen. Of course everyone else would turn into eldritch abominations the instant we entered the Void. Of course it seems that I could now stop time. It's obviously logical that that would give me a headache, and that I couldn't hold onto it for that long. It's also sensible that I seem to be psionic. Press any key to start");
 
     function processInput(input){
-            locationA();
+            Cafeteria();
     }
     waitForInput(processInput);
 }

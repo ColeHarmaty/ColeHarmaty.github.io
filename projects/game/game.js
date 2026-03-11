@@ -68,42 +68,52 @@ function waitThenCall(target){
                                                                                 
 function stayHere(){                                                            
     print("\nsorry, I don't understand your input. I'll assume you " +          
-        "want to stay here");                                                                                
+        "want to stay here");                                                                             
+//this adds press any key to continue to the end of a block of text and
+	//makes it work
+
+function anykey(a){
+	clear();
+	print("\n"+"\n--Press Any Key To Continue--");
+	waitForInput(processInput);
+	clear();
+}
 //This is the function you should call in your game code. Its                   
 //input is a function that takes a string and decides what to do with it 
 
 //Make one function for each location
 function Cafeteria() {
     clear();
-    print("You are surrounded by tentacle monsters, and time is frozen." +"\nYou can either run, or stop trying to keep the power in your head, well in your head");
+    print("You are surrounded by tentacle monsters, and time is frozen." +"\nYou can either run, or stop trying to keep the power in your head, well in \nyour head. You can sense that it will doing something, but you're not sure\nwhat");
     print("\n What do you want to do? Say one of these choices:" +
         "\n\run"+"\nlet the power out");
     
     function processInput(input){
         if (input.toLowerCase() === "run") {
 		time =+ 5;
-		print("\nYou've never did any kind of sports, but pherhaps you should've\n 
-            Hallway();
+		print("\nYou've never did any kind of sports, but pherhaps you should've\n. You sprint for the door with the speed of a cheetah, and it shows.\n Unfortunatly, they are faster than you are. You are about to be torn\napart by the tenactles when the chimps burst through the door, there faces\nshowing what, on a human, would be a smile. On a chimpaneze, it means they\nare pissed. They leap on to the monsters with a savage fury, tearing them\napart in a savage display of guts and fury. They pay for their injuries, but\nall the chimps survive. They will need medical treatement. You don't want\nto find out what is in those claws the hard way. You know you can find \nwhat you need in the Chimp Zone. You file out into the hallway with the chimps\n and firmly lock the door behind you. When you look behind you, the chimps are gone.");		
         } else {
             Magic =+ 1;
-            ;
+		print("You stop holding the power in. It shoots out of you in a sphere \nshaped ripple of something. When the ripple passes over the tentacle monsters,\nthey seem to crumble to dust. You stumble out the door, your headaching, and something urging you to check on the chimps.")
         }
     }
-    waitForInput(processInput);
+    waitThenCall(Hallway);
 }
 
 function Hallway() {
     clear();
 	timecheck();
-    print("\nYou are in the Hallway, with the door to the cafeteria shut and sealed\n firmly behind you.");
+    print("\nYou are in the Hallway, with the door to the cafeteria shut and sealed\n firmly behind you. From here, you can see the signs saying ChimpZone,\nCafeteria, and Reactor.");
     print("\nWhere do you want to go next? Say one of these choices:" +
-        "\n\tCafeteria"+"\n\tChimpZone);
+        "\n\tCafeteria"+"\n\tChimpZone"+"Reactor");
     
     function processInput(input){
-        if (input.toLowerCase() === "locationa") {
+        if (input.toLowerCase() === "Cafeteria") {
             print"You try to step into the Cafeteria. But as you move to open the doors, you flash back to the moment everyone you cared for, everyone but your distant aquantances, died. You jump back from the door like you've been burned. You won't go back there.";
-
-        } else {
+time =+ 5;
+		waitThenCall(Hallway)
+        } 
+	    (inp {
             stayHere();
             waitThenCall(locationB);
         }

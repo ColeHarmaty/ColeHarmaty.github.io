@@ -111,8 +111,17 @@ function Hallway() {
         if (input.toLowerCase() === "Cafeteria") {
             print"You try to step into the Cafeteria. But as you move to open the doors, you flash back to the moment everyone you cared for, everyone but your distant aquantances, died. You jump back from the door like you've been burned. You won't go back there.";
 time =+ 5;
-		waitThenCall(Hallway)
-        } 
+waitThenCall(Hallway);
+        }
+	    else {
+	   function processInput(input)
+		   if (input.toLowerCase() === "chimpzone"){
+			   ChimpZone();}
+			   else {
+		   function processInput(input){
+			   if (input.toLowerCase() === "reactor"){
+				   Reactor();}
+
 	    (inp {
             stayHere();
             waitThenCall(locationB);
@@ -146,13 +155,11 @@ function timecheck(){
 //very start. For this simple example, any input will bring you
 //to locationA
 function start(){
-    print("The first manned FTL test. Of course something like this would happen. Of course everyone else would turn into eldritch abominations the instant we entered the Void. Of course it seems that I could now stop time. It's obviously logical that that would give me a headache, and that I couldn't hold onto it for that long. It's also sensible that I seem to be psionic. Press any key to start");
-
+    print("The first manned FTL test. Of course something like this would happen.\n Of course everyone else would turn into eldritch abominations the instant we entered the Void.\nOf course it seems that I could now stop time. It's obviously logical\nthat that would give me a headache, and that I couldn't hold onto it\nfor that long. It's also sensible that I seem to be psionic.");
+waitThenCall(Cafeteria);
     function processInput(input){
             Cafeteria();
     }
     waitForInput(processInput);
 }
-print("The first human FTL test. Of course something like this happens. Of course we 
-start()
-
+start();

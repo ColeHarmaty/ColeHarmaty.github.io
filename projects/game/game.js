@@ -142,7 +142,6 @@ i	}
 function processInput(input){
 	if (input.toLowerCase() === "help the chimps"){
 ChimpsSaved =+ 1;
-time--;
 print("You spend a few minutes cleaning out the chimps' wounds");
 	ChimpZone();
 	}
@@ -153,13 +152,45 @@ print("You spend a few minutes cleaning out the chimps' wounds");
 	StayHere();
 	ChimpZone();
 	}
+}
+}
 function Reactor(){
 	clear();
 	timecheck();
 	print("\nYou are in the Reactor! This is where the ship's power");
 	print("\nis generated in a state of the art fusion reactor, and");
-print("\n where the ship's Void drive, currently powered down is. At least, that's\n what you've been told. For all");
-	//finally, make sure you customize this to tell it what should happen at the
+print("\n where the ship's Void drive, currently powered down is. At least, that's\n what you've been told. For all you know, it could be a really expensive\npeice of modern art. There should be people here, or at least what used to\nbe people, but there aren't any more. The only thing here that you haven't seen 20\ntimes before makes you feel like you got stabbed in the chest the instant you see\nit.\n\n\tA man in a security officers uniform, his body halfway transformed into one of\nthose things, half man and half monstrosity, with his left arm halfway transformed into\na tentacle. Given the gun in his hand and the way his skull looks like it exploded,\nyou now know roughly whathappened here.\nIn a daze, you do something very stupid, something that your biology teachers would\nyell at you for so much as considering, you touch the corpse. You recognize it in a heartbeat.\n\n\tSergeant Alexander Ivanov, the head of the security forces on this ship. People\nget rowdy in space, and the most he usaully has to deal with is breaking up a fistfight.\nYou feel the urge to salute to him, knowing what must have happened. You indulge\nit. It's nowhere near what he deserves, what any of the 299 ghosts that died on this\nship deserve, but something is better than nothing. And you will be thatsomething.\n "I'll see you on the other side in about 5 minutes if this doesn't work,"\nYou tell him, having seen the sign leading to the helm.\n\n\tWhat do you want to do? Say one of these choices:" + "\nStay Here" + "\nGo back to the Hallway" + "Go to the Helm");
+function processInput(input){
+	if (input.toLowerCase === "go back to the hallway"){
+		Hallway();
+}
+else if (input.toLowerCase === "go to the helm"){
+	Helm();
+}
+else{
+StayHere();
+	Reactor();
+}
+}
+}
+function Helm(){                                                            
+        clear();
+	timecheck();
+print("\n"\n\n\tWhat do you want to do? Say one of these choices:" + "\nStay Here" + "\nGo back to the Hallway" + "Go to the Helm");
+function processInput(input){                                                   
+        if (input.toLowerCase === "go back to the hallway"){                    
+                Hallway();                                                      
+}                                                                               
+else if (input.toLowerCase === "go to the helm"){                               
+        Helm();                                                                 
+}                                                                               
+else{                                                                           
+StayHere();                                                                     
+        Reactor();                                                              
+}                                                                               
+}
+}
+//finally, make sure you customize this to tell it what should happen at the
 //very start. For this simple example, any input will bring you
 //to locationA
 function start(){

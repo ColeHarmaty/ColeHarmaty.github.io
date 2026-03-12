@@ -142,7 +142,7 @@ i	}
 function processInput(input){
 	if (input.toLowerCase() === "help the chimps"){
 ChimpsSaved =+ 1;
-print("You spend a few minutes cleaning out the chimps' wounds");
+print("\nYou spend a few minutes cleaning out the chimps' wounds. It's soothing, and, based\non the fact that the flesh was starting to change color, you don't want to know\nwhat would've happened if you forgot to check on the chimps.");
 	ChimpZone();
 	}
 	else if (input.toLowerCase() === "Hallway"){
@@ -191,6 +191,15 @@ StayHere();
 }
 }
 function Ending(){
+clear();
+	if (ChimpsSaved = 0){
+print("\n\tThere's something that you forgot, you think to yourself as you strap into\nthe pilot's chair. But it can't be too important. You begin to punch in the codes\nwhen a sharp pain becomes the last thing you ever feel. As your vision grows dark\n, a glimpse of your killer's mutated face is the last thing you ever see. You\nrealize what you forgot: you really ought to have checked on the chimps.");
+	}
+	else if (Magic = 1){
+if(time = ){
+	print("\n\tYou strap into the pilots chair, and begin to look over the controls. It's\nfar more familair than you expected. It doesn't feel like this is the first\ntime you've flown a ship. It feels like the thousandth. You can here.");
+	}
+}
 }
 //finally, make sure you customize this to tell it what should happen at the
 //very start. For this simple example, any input will bring you

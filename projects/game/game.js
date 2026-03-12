@@ -11,20 +11,20 @@ function waitThenCall(target){
 	setTimeout(target,2000);
 }
 function EndGame(){
-waitThenCall(let gameActive = false);
+waitThenCall(let gameActive = false;);
 }
 function timecheck(){
 	time =+ 1;
-if (time = 6){
+if (time == 6){
 print("\n\tYou can feel something nasty sweep over you, like the shadow of a superpredator,\nbut with an added sense of disgust. It's searching for you, and you don't want\nto find out what will happen when it finds you. You get the sense that if you\ndon't get out now, you'll never be able to escape it completly.");
 }
-if (time = 7){
+if (time == 7){
 print("\n\tSuddenly, a wave of terror washes over you. Somehow, you know that it's\nmarked you. You will forever carry it's shadow. It's best that you get out of here\nquickly.");
 }
-if (time = 11){
+if (time == 11){
 	print("\n\tYou can feel that IT is nearly here. Your heart is pounding,\nblood racing as you are filled with terror. If you don't get out of here now,\nsomething horrible will happen to you.");
 }
-if (time = 12){
+if (time == 12){
 	print("\n\tSuddenly, you feel that it's too late for you. IT is here, and\nthere is nothing you can do. You can feel IT's pressure on your mind, as it begins to\ncrack. You resist, but it is futile. In less time than it takes to blink an eye,\nyou are reborn into IT's perfect slave, one who can plant the seed of the universe's\nremaking into IT's image. Three months later, humanity is dust, the electromagnetic radation\nemitted centuries ago the only hint that there was ever anything other than the\nIT's race of perfect servants in what was once known as Sol.");
 	EndGame();
 }
@@ -37,7 +37,7 @@ function print(text) {
     output.appendChild(line);                                                   
     output.scrollTop = output.scrollHeight;                                     
 }
-/clears the output screen.                                                     
+//clears the output screen.                                                     
 //this isn't really necessary, but I found that the output                      
 //looked cluttered if I didn't clear it every time the user                     
 //enters a new command                                                          
@@ -100,7 +100,7 @@ function Hallway() {
     
     function processInput(input){
         if (input.toLowerCase() === "Cafeteria") {
-            print"You try to step into the Cafeteria. But as you move to open the doors, you flash back to the moment everyone you cared for, everyone but your distant aquantances, died. You jump back from the door like you've been burned. You won't go back there.";
+            print("You try to step into the Cafeteria. But as you move to open the doors, you flash back to the moment everyone you cared for, everyone but your distant aquantances, died. You jump back from the door like you've been burned. You won't go back there.");
 time =+ 5;
 waitThenCall(Hallway);
         }
@@ -126,18 +126,18 @@ function ChimpZone() {
 clear();
 timecheck();                                                            
     print("\nYou are in the ChimpZone! The Chimps live here and most of the \ntime, so do you. You are the one who takes care of the chimps, after all.\nEverything you could want to care for an injured chimp can be found here. Al\nthe chimps' other supplies are also here, from toys to toilets. There is a booth\nacross the room where the chimps can pilot the ship from in the case of\nhumans turning out to be unable to navigate the Void. It requires permission codes\nto be activated, and you don't have all the codes nessecary to do so.\n\n\tUnfortunalty, even though the helm is almost certainly logged in,it still requires\nthose codes to activate the booth down here. You don't have enough time to jury-rig\na solution. Otherwise, you'd let the chimps do the job they were so good at,\nand get you out of here. The human helm is also significantly more complex than\nthe one down here, as it does other functions besides controlling the ship in\nthe Void. Otherwise, you'd be bringing a chimp with you to the helm.");
-	if (ChimpsSaved === "0"){
+	if (ChimpsSaved === 0){
 		print("\nThere are four injured chimps in cages.");
 	}
 	if(Magic > 0){
-		print("How did they get injured? They never left there cages.")
+		print("How did they get injured? They never left there cages.");
 	}
 	else{
-print("I didn't hallucinate the chimps saving me after all. They have the same\ninjuries that I saw them take in the cafeteria. But then, how did they get here,")
-i	}
+print("I didn't hallucinate the chimps saving me after all. They have the same\ninjuries that I saw them take in the cafeteria. But then, how did they get here,")	
+	}
 	print("\nWhat do you want to do? Say one of these choices:" + "\nStay Here"+ "\nGo To Hallway");
-	if (ChimpsSaved === "0"){
-		print("\nHelp The Chimps")
+	if (ChimpsSaved === 0){
+		print("\nHelp The Chimps");
 	}
 function processInput(input){
 	if (input.toLowerCase() === "help the chimps"){
@@ -192,14 +192,14 @@ else{
 }
 function Ending(){
 clear();
-	if (ChimpsSaved = 0){
+	if (ChimpsSaved == 0){
 print("\n\tThere's something that you forgot, you think to yourself as you strap into\nthe pilot's chair. But it can't be too important. You begin to punch in the codes\nwhen a sharp pain becomes the last thing you ever feel. As your vision grows dark\n, a glimpse of your killer's mutated face is the last thing you ever see. You\nrealize what you forgot: you really ought to have checked on the chimps.");
 	}
-	else if (Magic = 1){
-if(time = 6){
+	else if (Magic === 1){
+if(time === 6){
 	print("\n\tYou strap into the pilots chair, and begin to look over the controls. It's\nfar more familair than you expected. It doesn't feel like this is the first\ntime you've flown a ship. It feels like the thousandth. You can here something\ncalling to you in the distance, and feel the shadow of something Other that has\npassed over the ship recently. The sound is the most beautiful thing you've\never heard, and the shadow makes you recoil in horror. You can feel the shadow\ntrying to taint you, but you were too quick for it to get more than a passing\nglimpse into your soul.\n\n\tYou fly the ship through the Void with the efficency of a butterfly crossing\nthe Sahara. It only takes you two minutes to get out of the Void, as you take a\npath full of twists and turns. You punch through into realspace at the ships\noriginal destination with a feeling of disappointment that is shortly followed\nby the same feeling you get from stepping out of a muddy pit. Both the shadow and\nthe song are weaker here, but the shadow is more weakened. You punch in the com and\ncall out to the ships around you. You were succesful beyond all expectations\nat piloting the ship. Now it's time to figure out what happened to everyone else.\n\n\tTwo weeks later, you are teaching humanity's first course on psionics. It turns out\nthat cryostasis, at least when combined with some drugs, protects from the Shadow's influence.");
 }else{
-print("\n\tYou hurridly strap into the pilot's chair and dash through the Void,\nhoping As you escape the Void, you can feel the Shadow's taint on you. You\nwill be able to purge most of it, but some trace will haunt you for the rest of your days.
+print("\n\tYou hurridly strap into the pilot's chair and dash through the Void,\nhoping As you escape the Void, you can feel the Shadow's taint on you. You\nwill be able to purge most of it, but some trace will haunt you for the rest of your days.")
 }
 } else{
 print("\n\tYou don't even strap into the pilot's chair. You don't have time for that.\nYou push the ship hard and fast as you dash out of the Void. You are out in 30 seconds.\nYou can feel that any longer, and you would've suffered a fate too horrible for\na human mind to imagine. The ships behind you see a closing portal cut off a\ntentacle. Humanity abandons the Void as a method of travel and classifies the\nincident. You spend the rest of your days as a paranoid wreck, always looking over\nyour shoulder. Humanity barely discovers FTL in time to prevent World War III,\nand billions die before then from the turmoilrip out of the Void like a bat\nout of hell, feeling IT chase you.");

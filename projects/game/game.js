@@ -77,8 +77,7 @@ function stayHere(){
 function Cafeteria() {
     clear();
     print("You are surrounded by tentacle monsters, and time is frozen." +"\nYou can either run, or stop trying to keep the power in your head, well in \nyour head. You can sense that it will doing something, but you're not sure\nwhat");
-    print("\n What do you want to do? Say one of these choices:" +
-        "\n\run"+"\nlet the power out");
+    print("\n What do you want to do? Say one of these choices:" + "\n\run"+"\nlet the power out");
     
     function processInput(input){
         if (input.toLowerCase() === "run") {
@@ -86,7 +85,7 @@ function Cafeteria() {
 		print("\nYou've never did any kind of sports, but pherhaps you should've\n. You sprint for the door with the speed of a cheetah, and it shows.\n Unfortunatly, they are faster than you are. You are about to be torn\napart by the tenactles when the chimps burst through the door, there faces\nshowing what, on a human, would be a smile. On a chimpaneze, it means they\nare pissed. They leap on to the monsters with a savage fury, tearing them\napart in a savage display of guts and fury. They pay for their injuries, but\nall the chimps survive. They will need medical treatement. You don't want\nto find out what is in those claws the hard way. You know you can find \nwhat you need in the Chimp Zone. You file out into the hallway with the chimps\n and firmly lock the door behind you. When you look behind you, the chimps are gone.");		
         } else {
             Magic =+ 1;
-		print("You stop holding the power in. It shoots out of you in a sphere \nshaped ripple of something. When the ripple passes over the tentacle monsters,\nthey seem to crumble to dust. You stumble out the door, your headaching, and something urging you to check on the chimps.")
+		print("You stop holding the power in. It shoots out of you in a sphere \nshaped ripple of something. When the ripple passes over the tentacle monsters,\nthey seem to crumble to dust. You stumble out the door, your headaching, and something urging you to check on the chimps.");
         }
     }
     waitThenCall(Hallway);
@@ -133,7 +132,7 @@ timecheck();
 		print("How did they get injured? They never left there cages.");
 	}
 	else{
-print("I didn't hallucinate the chimps saving me after all. They have the same\ninjuries that I saw them take in the cafeteria. But then, how did they get here,")	
+print("I didn't hallucinate the chimps saving me after all. They have the same\ninjuries that I saw them take in the cafeteria. But then, how did they get here,");	
 	}
 	print("\nWhat do you want to do? Say one of these choices:" + "\nStay Here"+ "\nGo To Hallway");
 	if (ChimpsSaved === 0){
@@ -157,9 +156,7 @@ print("\nYou spend a few minutes cleaning out the chimps' wounds. It's soothing,
 function Reactor(){
 	clear();
 	timecheck();
-	print("\nYou are in the Reactor! This is where the ship's power");
-	print("\nis generated in a state of the art fusion reactor, and");
-print("\n where the ship's Void drive, currently powered down is. At least, that's\n what you've been told. For all you know, it could be a really expensive\npeice of modern art. There should be people here, or at least what used to\nbe people, but there aren't any more. The only thing here that you haven't seen 20\ntimes before makes you feel like you got stabbed in the chest the instant you see\nit.\n\n\tA man in a security officers uniform, his body halfway transformed into one of\nthose things, half man and half monstrosity, with his left arm halfway transformed into\na tentacle. Given the gun in his hand and the way his skull looks like it exploded,\nyou now know roughly whathappened here.\nIn a daze, you do something very stupid, something that your biology teachers would\nyell at you for so much as considering, you touch the corpse. You recognize it in a heartbeat.\n\n\tSergeant Alexander Ivanov, the head of the security forces on this ship. People\nget rowdy in space, and the most he usaully has to deal with is breaking up a fistfight.\nYou feel the urge to salute to him, knowing what must have happened. You indulge\nit. It's nowhere near what he deserves, what any of the 299 ghosts that died on this\nship deserve, but something is better than nothing. And you will be thatsomething.\n "I'll see you on the other side in about 5 minutes if this doesn't work,"\nYou tell him, having seen the sign leading to the helm.\n\n\tWhat do you want to do? Say one of these choices:" + "\nStay Here" + "\nGo back to the Hallway" + "Go to the Helm");
+	print("\n\tYou are in the Reactor! This is where the ship's power is generated in\na state of the art fusion reactor, andwhere the ship's Void drive, currently powered down is. At least,\nthat's what you've been told. For all you know, it could be a really expensive\npeice of modern art. There should be people here, or at least what used to\nbe people, but there aren't any more. The only thing here that you haven't seen 20\ntimes before makes you feel like you got stabbed in the chest the instant you see\nit.\n\n\tA man in a security officers uniform, his body halfway transformed into one of\nthose things, half man and half monstrosity, with his left arm halfway transformed into\na tentacle. Given the gun in his hand and the way his skull looks like it exploded,\nyou now know roughly whathappened here.\nIn a daze, you do something very stupid, something that your biology teachers would\nyell at you for so much as considering, you touch the corpse. You recognize it in a heartbeat.\n\n\tSergeant Alexander Ivanov, the head of the security forces on this ship. People\nget rowdy in space, and the most he usaully has to deal with is breaking up a fistfight.\nYou feel the urge to salute to him, knowing what must have happened. You indulge\nit. It's nowhere near what he deserves, what any of the 299 ghosts that died on this\nship deserve, but something is better than nothing. And you will be thatsomething.\n "I'll see you on the other side in about 5 minutes if this doesn't work,"\nYou tell him, having seen the sign leading to the helm.\n\n\tWhat do you want to do? Say one of these choices:\nStay Here\nGo back to the Hallway\nGo to the Helm");
 function processInput(input){
 	if (input.toLowerCase === "go back to the hallway"){
 		Hallway();
@@ -199,7 +196,7 @@ print("\n\tThere's something that you forgot, you think to yourself as you strap
 if(time === 6){
 	print("\n\tYou strap into the pilots chair, and begin to look over the controls. It's\nfar more familair than you expected. It doesn't feel like this is the first\ntime you've flown a ship. It feels like the thousandth. You can here something\ncalling to you in the distance, and feel the shadow of something Other that has\npassed over the ship recently. The sound is the most beautiful thing you've\never heard, and the shadow makes you recoil in horror. You can feel the shadow\ntrying to taint you, but you were too quick for it to get more than a passing\nglimpse into your soul.\n\n\tYou fly the ship through the Void with the efficency of a butterfly crossing\nthe Sahara. It only takes you two minutes to get out of the Void, as you take a\npath full of twists and turns. You punch through into realspace at the ships\noriginal destination with a feeling of disappointment that is shortly followed\nby the same feeling you get from stepping out of a muddy pit. Both the shadow and\nthe song are weaker here, but the shadow is more weakened. You punch in the com and\ncall out to the ships around you. You were succesful beyond all expectations\nat piloting the ship. Now it's time to figure out what happened to everyone else.\n\n\tTwo weeks later, you are teaching humanity's first course on psionics. It turns out\nthat cryostasis, at least when combined with some drugs, protects from the Shadow's influence.");
 }else{
-print("\n\tYou hurridly strap into the pilot's chair and dash through the Void,\nhoping As you escape the Void, you can feel the Shadow's taint on you. You\nwill be able to purge most of it, but some trace will haunt you for the rest of your days.")
+print("\n\tYou hurridly strap into the pilot's chair and dash through the Void,\nhoping As you escape the Void, you can feel the Shadow's taint on you. You\nwill be able to purge most of it, but some trace will haunt you for the rest of your days.");
 }
 } else{
 print("\n\tYou don't even strap into the pilot's chair. You don't have time for that.\nYou push the ship hard and fast as you dash out of the Void. You are out in 30 seconds.\nYou can feel that any longer, and you would've suffered a fate too horrible for\na human mind to imagine. The ships behind you see a closing portal cut off a\ntentacle. Humanity abandons the Void as a method of travel and classifies the\nincident. You spend the rest of your days as a paranoid wreck, always looking over\nyour shoulder. Humanity barely discovers FTL in time to prevent World War III,\nand billions die before then from the turmoilrip out of the Void like a bat\nout of hell, feeling IT chase you.");

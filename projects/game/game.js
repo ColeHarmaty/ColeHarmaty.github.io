@@ -7,8 +7,27 @@ let time = 0;
 let Magic = 0;
 
 //If you need, add any "helper" functions here
+function waitThenCall(target){
+	setTimeout(target,2000);
+}
+function EndGame(){
+waitThenCall(let gameActive = false);
+}
 function timecheck(){
 	time =+ 1;
+if (time = 6){
+print("\n\tYou can feel something nasty sweep over you, like the shadow of a superpredator,\nbut with an added sense of disgust. It's searching for you, and you don't want\nto find out what will happen when it finds you. You get the sense that if you\ndon't get out now, you'll never be able to escape it completly.");
+}
+if (time = 7){
+print("\n\tSuddenly, a wave of terror washes over you. Somehow, you know that it's\nmarked you. You will forever carry it's shadow. It's best that you get out of here\nquickly.");
+}
+if (time = 11){
+	print("\n\tYou can feel that IT is nearly here. Your heart is pounding,\nblood racing as you are filled with terror. If you don't get out of here now,\nsomething horrible will happen to you.");
+}
+if (time = 12){
+	print("\n\tSuddenly, you feel that it's too late for you. IT is here, and\nthere is nothing you can do. You can feel IT's pressure on your mind, as it begins to\ncrack. You resist, but it is futile. In less time than it takes to blink an eye,\nyou are reborn into IT's perfect slave, one who can plant the seed of the universe's\nremaking into IT's image. Three months later, humanity is dust, the electromagnetic radation\nemitted centuries ago the only hint that there was ever anything other than the\nIT's race of perfect servants in what was once known as Sol.");
+	EndGame();
+}
 }
 // This function prints text out to the terminal                                
 function print(text) { 
@@ -18,27 +37,13 @@ function print(text) {
     output.appendChild(line);                                                   
     output.scrollTop = output.scrollHeight;                                     
 }
-	//this formats text inside a pre tag.                                           
-//it just makes sure that HTML doesn't mess with spacing                        
-//tip - ASCII art will need to escape any backslashes!                          
-//      so to print \, you'll need to say \\                                    
-function printAscii(art) {                                                      
-    const output = document.getElementById('output');                           
-    const pre = document.createElement('pre');                                  
-    pre.className = 'ascii-art';                                                
-    pre.textContent = art;                                                      
-    output.appendChild(pre);                                                    
-    output.scrollTop = output.scrollHeight;                                     
-}                                                                               
-                                                                                
-//clears the output screen.                                                     
+/clears the output screen.                                                     
 //this isn't really necessary, but I found that the output                      
 //looked cluttered if I didn't clear it every time the user                     
 //enters a new command                                                          
-function clear() {                                                              
-    document.getElementById('output').innerHTML = '';                           
-}                                                                               
-                                                                                
+function clear() {
+	document.getElementById('output').innerHTML = '';
+}
 // This lets the user type input. It acts a little weird.                       
 // Don't worry too much yet about how it works. Just know                       
 // that when you press the enter key, it grabs what you typed                   
@@ -50,7 +55,7 @@ document.getElementById('user-input').addEventListener('keypress', function(e) {
         print('> ' + input);                                                    
         handleInput(input);                                                     
     }                                                                           
-});                                                                             
+)};                                                                             
                                                                                 
 //This function will be overridden by the current game state                    
 function handleInput(input) {                                                   
@@ -61,13 +66,9 @@ function handleInput(input) {
 //input is a function that takes a string and decides what to do with it        
 function waitForInput(handlerFunction){                                         
     handleInput = handlerFunction;                                              
-}                                                                               
-                                                                                
-function waitThenCall(target){                                                  
-    setTimeout(target,2000);                                                    
 }                                                                              
 function stayHere(){
-	print("\nsorry, I don't understand your input. I'll assume you " + "want to stay here");
+	print("\nYou just stand there.");
 }
 //This is the function you should call in your game code. Its                   
 //input is a function that takes a string and decides what to do with it 
@@ -107,20 +108,19 @@ waitThenCall(Hallway);
 		   if (input.toLowerCase() === "chimpzone"){
 			   ChimpZone();
 		   }
-			   else {
-			   if (input.toLowerCase() === "reactor"){
+			   else if (input.toLowerCase() === "reactor"){
+			   {
 				   Reactor();
 			   }
-			   else if (input.toLowerCase != "reactor"){
+			   else {
 				   StayHere();
-				   waitThenCall(Hallway);
+				   Hallway();
 			   }
-	   
         }
     }
     waitForInput(processInput);
 }
-
+}
 
 function ChimpZone() {
 clear();
@@ -181,13 +181,13 @@ function processInput(input){
 	if (input.toLowerCase === "go back to the reactor"){
                 Reactor();
 	}
-	else if (input.toLowerCase === "fly the ship"){                               
-        Ending();
-	}                                                                               
-else{                                                                           
-StayHere();                                                                     
-        Helm();                                                              
-}                                                                               
+	else if (input.toLowerCase === "fly the ship"){
+		Ending();
+	}
+else{
+	stayHere();
+	Helm();
+}
 }
 }
 function Ending(){
@@ -196,20 +196,21 @@ clear();
 print("\n\tThere's something that you forgot, you think to yourself as you strap into\nthe pilot's chair. But it can't be too important. You begin to punch in the codes\nwhen a sharp pain becomes the last thing you ever feel. As your vision grows dark\n, a glimpse of your killer's mutated face is the last thing you ever see. You\nrealize what you forgot: you really ought to have checked on the chimps.");
 	}
 	else if (Magic = 1){
-if(time = ){
-	print("\n\tYou strap into the pilots chair, and begin to look over the controls. It's\nfar more familair than you expected. It doesn't feel like this is the first\ntime you've flown a ship. It feels like the thousandth. You can here.");
-	}
+if(time = 6){
+	print("\n\tYou strap into the pilots chair, and begin to look over the controls. It's\nfar more familair than you expected. It doesn't feel like this is the first\ntime you've flown a ship. It feels like the thousandth. You can here something\ncalling to you in the distance, and feel the shadow of something Other that has\npassed over the ship recently. The sound is the most beautiful thing you've\never heard, and the shadow makes you recoil in horror. You can feel the shadow\ntrying to taint you, but you were too quick for it to get more than a passing\nglimpse into your soul.\n\n\tYou fly the ship through the Void with the efficency of a butterfly crossing\nthe Sahara. It only takes you two minutes to get out of the Void, as you take a\npath full of twists and turns. You punch through into realspace at the ships\noriginal destination with a feeling of disappointment that is shortly followed\nby the same feeling you get from stepping out of a muddy pit. Both the shadow and\nthe song are weaker here, but the shadow is more weakened. You punch in the com and\ncall out to the ships around you. You were succesful beyond all expectations\nat piloting the ship. Now it's time to figure out what happened to everyone else.\n\n\tTwo weeks later, you are teaching humanity's first course on psionics. It turns out\nthat cryostasis, at least when combined with some drugs, protects from the Shadow's influence.");
+}else{
+print("\n\tYou hurridly strap into the pilot's chair and dash through the Void,\nhoping As you escape the Void, you can feel the Shadow's taint on you. You\nwill be able to purge most of it, but some trace will haunt you for the rest of your days.
 }
+} else{
+print("\n\tYou don't even strap into the pilot's chair. You don't have time for that.\nYou push the ship hard and fast as you dash out of the Void. You are out in 30 seconds.\nYou can feel that any longer, and you would've suffered a fate too horrible for\na human mind to imagine. The ships behind you see a closing portal cut off a\ntentacle. Humanity abandons the Void as a method of travel and classifies the\nincident. You spend the rest of your days as a paranoid wreck, always looking over\nyour shoulder. Humanity barely discovers FTL in time to prevent World War III,\nand billions die before then from the turmoilrip out of the Void like a bat\nout of hell, feeling IT chase you.");
+}
+EndGame();
 }
 //finally, make sure you customize this to tell it what should happen at the
 //very start. For this simple example, any input will bring you
 //to locationA
 function start(){
-    print("The first manned FTL test. Of course something like this would happen.\n Of course everyone else would turn into eldritch abominations the instant we entered the Void.\nOf course it seems that I could now stop time. It's obviously logical\nthat that would give me a headache, and that I couldn't hold onto it\nfor that long. It's also sensible that I seem to be psionic.");
-waitThenCall(Cafeteria);
-    function processInput(input){
-            Cafeteria();
-    }
-    waitForInput(processInput);
+    print("\n\tThe first manned FTL test. Of course something like this would happen.\n Of course everyone else would turn into eldritch abominations the instant we entered the Void.\nOf course it seems that I could now stop time. It's obviously logical\nthat that would give me a headache, and that I couldn't hold onto it\nfor that long. It's also sensible that I seem to be psionic.");
+waitThenCall(Cafeteria());
 }
 start();

@@ -51,11 +51,11 @@ function clear() {
 document.getElementById('user-input').addEventListener('keypress', function(e) {(
     if (e.key === 'Enter' && gameActive) {                                      
         const input = this.value.trim();                                        
-        this.value = '';                                                        
-        print('> ' + input);                                                    
-        handleInput(input);                                                     
-    }                                                                           
-)};                                                                             
+        this.value = '';
+	    print('> ' + input);
+	    handleInput(input);
+    }
+});                                                                             
                                                                                 
 //This function will be overridden by the current game state                    
 function handleInput(input) {                                                   
@@ -199,7 +199,7 @@ if(time === 6){
 print("\n\tYou hurridly strap into the pilot's chair and dash through the Void,\nhoping As you escape the Void, you can feel the Shadow's taint on you. You\nwill be able to purge most of it, but some trace will haunt you for the rest of your days.");
 }
 } else{
-print("\n\tYou don't even strap into the pilot's chair. You don't have time for that.\nYou push the ship hard and fast as you dash out of the Void. You are out in 30 seconds.\nYou can feel that any longer, and you would've suffered a fate too horrible for\na human mind to imagine. The ships behind you see a closing portal cut off a\ntentacle. Humanity abandons the Void as a method of travel and classifies the\nincident. You spend the rest of your days as a paranoid wreck, always looking over\nyour shoulder. Humanity barely discovers FTL in time to prevent World War III,\nand billions die before then from the turmoilrip out of the Void like a bat\nout of hell, feeling IT chase you.");
+print("\n\tYou don't even strap into the pilot's chair. You don't have time for that.\nYou push the ship hard and fast as you dash out of the Void. You are out in 30 seconds.\nYou can feel that any longer, and you would've suffered a fate too horrible for\na human mind to imagine. The ships behind you see a closing portal cut off a\ntentacle. Humanity abandons the Void as a method of travel and classifies the\nincident. You spend the rest of your days as a paranoid wreck, always looking over\nyour shoulder. Humanity barely discovers FTL in time to prevent World War III,\nand billions die before then. Earth is ruined, and humanity abandons it's homeworld,\ncrawling through the dark between the stars in ships barely faster than light\n.");
 }
 EndGame();
 }
@@ -210,4 +210,3 @@ function start(){
     print("\n\tThe first manned FTL test. Of course something like this would happen.\n Of course everyone else would turn into eldritch abominations the instant we entered the Void.\nOf course it seems that I could now stop time. It's obviously logical\nthat that would give me a headache, and that I couldn't hold onto it\nfor that long. It's also sensible that I seem to be psionic.");
 waitThenCall(Cafeteria());
 }
-start();

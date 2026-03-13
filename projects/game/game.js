@@ -11,7 +11,7 @@ function waitThenCall(target){
 	setTimeout(target,2000);
 }
 function EndGame(){
-waitThenCall(let gameActive = false);
+let gameActive = false;
 }
 function timecheck(){
 	time =+ 1;

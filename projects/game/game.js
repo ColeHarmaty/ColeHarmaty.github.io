@@ -155,7 +155,10 @@ EndGame();
 //very start. For this simple example, any input will bring you
 //to locationA
 function start(){
-    console.log(time);
+let time = 0;
+	let Magic = 0;
+	let ChimpsSaved = 0;
+	console.log(time);
 	console.log(ChimpsSaved);
 	console.log(Magic);
 	print("\n\tThe first manned FTL test. Of course something like this would happen.\n Of course everyone else would turn into eldritch abominations the instant we entered the Void.\nOf course it seems that I could now stop time. It's obviously logical\nthat that would give me a headache, and that I couldn't hold onto it\nfor that long. It's also sensible that I seem to be psionic.");

@@ -11,7 +11,7 @@ function waitThenCall(target){
 	setTimeout(target,2000);
 }
 function EndGame(){
-waitThenCall(let gameActive = false;);
+waitThenCall(let gameActive = false;)
 }
 function timecheck(){
 	time =+ 1;
@@ -88,7 +88,7 @@ function Cafeteria() {
 		print("You stop holding the power in. It shoots out of you in a sphere \nshaped ripple of something. When the ripple passes over the tentacle monsters,\nthey seem to crumble to dust. You stumble out the door, your headaching, and something urging you to check on the chimps.");
         }
     }
-    waitThenCall(Hallway);
+    waitThenCall(Hallway());
 }
 
 function Hallway() {

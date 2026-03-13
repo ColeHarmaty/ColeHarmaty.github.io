@@ -8,6 +8,7 @@ let Magic = 0;
 
 //If you need, add any "helper" functions here
 function waitThenCall(target){
+	console.log(waitThenCall activated);
 	setTimeout(target,2000);
 }
 
@@ -15,6 +16,7 @@ function EndGame() {
 let gameActive = false;
 }
 function timecheck() {
+	console.log(timecheck activated);
 	time =+ 1;
 if (time == 6) {
 print("\n\tYou can feel something nasty sweep over you, like the shadow of a superpredator,\nbut with an added sense of disgust. It's searching for you, and you don't want\nto find out what will happen when it finds you. You get the sense that if you\ndon't get out now, you'll never be able to escape it completly.");
@@ -33,6 +35,7 @@ waitForInput(processInput);
 }
 
 function StayHere() {
+	console.log(stayhere activated);
 print("\n\tYou just stand there for a few minutes. Say one of the choices listed above.");
 timecheck();
 }
@@ -47,7 +50,7 @@ function Cafeteria() {
     function processInput(input){
         if (input.toLowerCase() === "run") {
 		time =+ 5;
-		print("\n\tYou've never did any kind of sports, but pherhaps you should've\n. You sprint for the door with the speed of a cheetah, and it shows.\n Unfortunatly, they are faster than you are. You are about to be torn\napart by the tenactles when the chimps burst through the door, there faces\nshowing what, on a human, would be a smile. On a chimpaneze, it means they\nare pissed. They leap on to the monsters with a savage fury, tearing them\napart in a savage display of guts and fury. They pay for their injuries, but\nall the chimps survive. They will need medical treatement. You don't want\nto find out what is in those claws the hard way. You know you can find \nwhat you need in the Chimp Zone. You file out into the hallway with the chimps\n and firmly lock the door behind you. When you look behind you, the chimps are gone.");		
+		print("\n\tYou've never did any kind of sports, but pherhaps you should've.\nYou sprint for the door with the speed of a cheetah, and it shows.\nUnfortunatly, they are faster than you are. You are about to be torn\napart by the tenactles when the chimps burst through the door, there faces\nshowing what, on a human, would be a smile. On a chimpaneze, it means they\nare pissed. They leap on to the monsters with a savage fury, tearing them\napart in a savage display of guts and fury. They pay for their injuries, but\nall the chimps survive. They will need medical treatement. You don't want\nto find out what is in those claws the hard way. You know you can find \nwhat you need in the Chimp Zone. You file out into the hallway with the chimps\nand firmly lock the door behind you. When you look behind you, the chimps are gone.");		
         waitThenCall(Hallway());
 	} else if (input.toLowerCase() === "let the power out") {
             Magic =+ 1;

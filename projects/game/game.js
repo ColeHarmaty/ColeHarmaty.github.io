@@ -10,66 +10,26 @@ let Magic = 0;
 function waitThenCall(target){
 	setTimeout(target,2000);
 }
-function EndGame(){
+function EndGame() {
 let gameActive = false;
 }
-function timecheck(){
+function timecheck() {
 	time =+ 1;
-if (time == 6){
+if (time == 6) {
 print("\n\tYou can feel something nasty sweep over you, like the shadow of a superpredator,\nbut with an added sense of disgust. It's searching for you, and you don't want\nto find out what will happen when it finds you. You get the sense that if you\ndon't get out now, you'll never be able to escape it completly.");
 }
-if (time == 7){
+if (time == 7) {
 print("\n\tSuddenly, a wave of terror washes over you. Somehow, you know that it's\nmarked you. You will forever carry it's shadow. It's best that you get out of here\nquickly.");
 }
-if (time == 11){
+if (time == 11) {
 	print("\n\tYou can feel that IT is nearly here. Your heart is pounding,\nblood racing as you are filled with terror. If you don't get out of here now,\nsomething horrible will happen to you.");
 }
-if (time == 12){
+if (time == 12) {
 	print("\n\tSuddenly, you feel that it's too late for you. IT is here, and\nthere is nothing you can do. You can feel IT's pressure on your mind, as it begins to\ncrack. You resist, but it is futile. In less time than it takes to blink an eye,\nyou are reborn into IT's perfect slave, one who can plant the seed of the universe's\nremaking into IT's image. Three months later, humanity is dust, the electromagnetic radation\nemitted centuries ago the only hint that there was ever anything other than the\nIT's race of perfect servants in what was once known as Sol.");
 	EndGame();
 }
 }
-// This function prints text out to the terminal                                
-function print(text) { 
-    const output = document.getElementById('output');                           
-    const line = document.createElement('div');                                 
-    line.innerHTML = "<p>" + text + "</p>";                                     
-    output.appendChild(line);                                                   
-    output.scrollTop = output.scrollHeight;                                     
-}
-//clears the output screen.                                                     
-//this isn't really necessary, but I found that the output                      
-//looked cluttered if I didn't clear it every time the user                     
-//enters a new command                                                          
-function clear() {
-	document.getElementById('output').innerHTML = '';
-}
-// This lets the user type input. It acts a little weird.                       
-// Don't worry too much yet about how it works. Just know                       
-// that when you press the enter key, it grabs what you typed                   
-// and passes it to a function called `handleInput`                             
-document.getElementById('user-input').addEventListener('keypress', function(e) {(
-    if (e.key === 'Enter' && gameActive) {                                      
-        const input = this.value.trim();                                        
-        this.value = '';
-	    print('> ' + input);
-	    handleInput(input);
-    }
-});                                                                             
-                                                                                
-//This function will be overridden by the current game state                    
-function handleInput(input) {                                                   
-    console.log("No handler for input: " + input);                              
-}                                                                               
-                                                                              
-//This is the function you should call in your game code. Its                   
-//input is a function that takes a string and decides what to do with it        
-function waitForInput(handlerFunction){                                         
-    handleInput = handlerFunction;                                              
-}                                                                              
-function stayHere(){
-	print("\nYou just stand there.");
-}
+
 //This is the function you should call in your game code. Its                   
 //input is a function that takes a string and decides what to do with it 
 

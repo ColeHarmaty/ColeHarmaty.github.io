@@ -29,6 +29,7 @@ if (time == 12) {
 	print("\n\tSuddenly, you feel that it's too late for you. IT is here, and\nthere is nothing you can do. You can feel IT's pressure on your mind, as it begins to\ncrack. You resist, but it is futile. In less time than it takes to blink an eye,\nyou are reborn into IT's perfect slave, one who can plant the seed of the universe's\nremaking into IT's image. Three months later, humanity is dust, the electromagnetic radation\nemitted centuries ago the only hint that there was ever anything other than the\nIT's race of perfect servants in what was once known as Sol.");
 	EndGame();
 }
+waitForInput(processInput);
 }
 
 function StayHere() {
@@ -54,6 +55,7 @@ function Cafeteria() {
        Hallway();
 	}
     }
+	waitForInput(processInput);
 }
 
 function Hallway() {
@@ -114,6 +116,7 @@ print("\n\tYou spend a few minutes cleaning out the chimps' wounds. It's soothin
 	ChimpZone();
 	}
 }
+waitForInput(processInput);
 }
 function Reactor(){
 	clear();
@@ -131,6 +134,7 @@ StayHere();
 	Reactor();
 }
 }
+waitForInput(processInput);
 }
 function Helm(){                                                            
         clear();
@@ -148,6 +152,7 @@ else{
 	Helm();
 }
 }
+waitForInput(processInput);
 }
 function Ending(){
 clear();
@@ -170,5 +175,8 @@ EndGame();
 //to locationA
 function start(){
     print("\n\tThe first manned FTL test. Of course something like this would happen.\n Of course everyone else would turn into eldritch abominations the instant we entered the Void.\nOf course it seems that I could now stop time. It's obviously logical\nthat that would give me a headache, and that I couldn't hold onto it\nfor that long. It's also sensible that I seem to be psionic.");
-Cafeteria();
+function processInput(input){
+	Cafeteria();
+}
+waitForInput(processInput);
 }

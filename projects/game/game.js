@@ -120,7 +120,7 @@ waitForInput(processInput);
 function Reactor(){
 	clear();
 	timecheck();
-	print("\n\tYou are in the Reactor! This is where the ship's power is generated in\na state of the art fusion reactor, and where the ship's Void drive, currently powered down is. At least,\nthat's what you've been told. For all you know, it could be a really expensive\npeice of modern art. There should be people here, or at least what used to\nbe people, but there aren't any more. The only thing here that you haven't seen 20\ntimes before makes you feel like you got stabbed in the chest the instant you see\nit.\n\n\tA man in a security officers uniform, his body halfway transformed into one of\nthose things, half man and half monstrosity, with his left arm halfway transformed into\na tentacle. Given the gun in his hand and the way his skull looks like it exploded,\nyou now know roughly whathappened here.\nIn a daze, you do something very stupid, something that your biology teachers would\nyell at you for so much as considering, you touch the corpse. You recognize it in a heartbeat.\n\n\tSergeant Alexander Ivanov, the head of the security forces on this ship. People\nget rowdy in space, and the most he usaully has to deal with is breaking up a fistfight.\nYou feel the urge to salute to him, knowing what must have happened. You indulge\nit. It's nowhere near what he deserves, what any of the 299 ghosts that died on this\nship deserve, but something is better than nothing. And you will be thatsomething.\n \"I'll see you on the other side in about 5 minutes if this doesn't work,\"\nYou tell him, having seen the sign leading to the helm.\n\n\tWhat do you want to do? Say one of these choices:\nStay Here\nGo back to the Hallway\nGo to the Helm");
+	print("\n\tYou are in the Reactor! This is where the ship's power is generated in\na state of the art fusion reactor, and where the ship's Void drive, currently powered down is. At least,\nthat's what you've been told. For all you know, it could be a really expensive\npeice of modern art. There should be people here, or at least what used to\nbe people, but there aren't any more. The only thing here that you haven't seen 20\ntimes before makes you feel like you got stabbed in the chest the instant you see\nit.\n\n\tA man in a security officers uniform, his body halfway transformed into one of\nthose things, half man and half monstrosity, with his left arm halfway transformed into\na tentacle. Given the gun in his hand and the way his skull looks like it exploded,\nyou now know roughly whathappened here.\nIn a daze, you do something very stupid, something that your biology teachers would\nyell at you for so much as considering, you touch the corpse. You recognize it in a heartbeat.\n\n\tSergeant Alexander Ivanov, the head of the security forces on this ship. People\nget rowdy in space, and the most he usaully has to deal with is breaking up a fistfight.\nYou feel the urge to salute to him, knowing what must have happened. You indulge\nit. It's nowhere near what he deserves, what any of the 299 ghosts that died on this\nship deserve, but something is better than nothing. And you will be that something.\n\"I'll see you on the other side in about 5 minutes if this doesn't work,\"\nYou tell him, having seen the sign leading to the helm.\n\nWhat do you want to do? Say one of these choices:\n\tStay Here\n\tGo back to the Hallway\n\tGo to the Helm");
 function processInput(input){
 	if (input.toLowerCase === "go back to the hallway"){
 		Hallway();
@@ -136,7 +136,6 @@ StayHere();
 waitForInput(processInput);
 }
 function Helm(){                                                            
-        clear();
 	timecheck();
 print("\n\tThe Helm. Where the ship is piloted from. Normally, you'd never be here.\nIn a world where the pilot wasn't dead, you wouldn't. The helm is blinking just\n as you predicted. It's still logged in. It looks familiar to you, just as you\nhoped. You've never done this before, never trained for it, but you've helped\nthe chimps do so enough to instantly identify most of the controls, and seen\nenough of the sims the chimps trained in to have an idea of what you need to\ndo to fly the ship.\n\nWhat do you want to do? Say one of these choices:\nStay Here\nGo back to the Reactor\nfly the Ship");
 function processInput(input){
@@ -146,7 +145,7 @@ function processInput(input){
 	else if (input.toLowerCase === "fly the ship"){
 		Ending();
 	}
-else{
+else if (input.toLowerCase === "stay here") {
 	stayHere();
 	Helm();
 }

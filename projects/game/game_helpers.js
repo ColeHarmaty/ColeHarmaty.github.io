@@ -53,11 +53,3 @@ function waitForInput(handlerFunction){
     handleInput = handlerFunction;
 }
 
-function waitThenCall(target){
-    setTimeout(target,2000);
-}
-
-function stayHere(){
-    print("\nsorry, I don't understand your input. I'll assume you " +
-        "want to stay here");
-}

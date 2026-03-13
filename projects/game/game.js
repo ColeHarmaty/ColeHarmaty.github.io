@@ -10,6 +10,7 @@ let Magic = 0;
 function waitThenCall(target){
 	setTimeout(target,2000);
 }
+
 function EndGame() {
 let gameActive = false;
 }
@@ -30,12 +31,15 @@ if (time == 12) {
 }
 }
 
+function StayHere() {
+print("\n\tYou just stand there for a few minutes. Say one of the choices listed above.");
+timecheck();
+}
 //This is the function you should call in your game code. Its                   
 //input is a function that takes a string and decides what to do with it 
 
 //Make one function for each location
 function Cafeteria() {
-    clear();
     print("\n\tYou are surrounded by tentacle monsters, and time is frozen." +"\nYou can either run, or stop trying to keep the power in your head, well in \nyour head. You can sense that it will doing something, but you're not sure\nwhat");
     print("\nWhat do you want to do? Say one of these choices:" + "\n\trun"+"\n\tlet the power out");
     
@@ -43,34 +47,34 @@ function Cafeteria() {
         if (input.toLowerCase() === "run") {
 		time =+ 5;
 		print("\n\tYou've never did any kind of sports, but pherhaps you should've\n. You sprint for the door with the speed of a cheetah, and it shows.\n Unfortunatly, they are faster than you are. You are about to be torn\napart by the tenactles when the chimps burst through the door, there faces\nshowing what, on a human, would be a smile. On a chimpaneze, it means they\nare pissed. They leap on to the monsters with a savage fury, tearing them\napart in a savage display of guts and fury. They pay for their injuries, but\nall the chimps survive. They will need medical treatement. You don't want\nto find out what is in those claws the hard way. You know you can find \nwhat you need in the Chimp Zone. You file out into the hallway with the chimps\n and firmly lock the door behind you. When you look behind you, the chimps are gone.");		
-        } else if (input.toLowerCase() === "let the power out") {
+        waitThenCall(Hallway());
+	} else if (input.toLowerCase() === "let the power out") {
             Magic =+ 1;
 		print("\n\tYou stop holding the power in. It shoots out of you in a sphere \nshaped ripple of something. When the ripple passes over the tentacle monsters,\nthey seem to crumble to dust. You stumble out the door, your headaching, and something urging you to check on the chimps.");
-        }
+       Hallway();
+	}
     }
-    waitThenCall(Hallway());
 }
 
 function Hallway() {
-    clear();
 	timecheck();
     print("\n\tYou are in the Hallway, with the door to the cafeteria shut and sealed\n firmly behind you. From here, you can see the signs saying ChimpZone,\nCafeteria, and Reactor.");
     print("\nWhat do you want to do next? Say one of these choices:" + "\n\tStay Here"+"\n\tGo To Cafeteria"+"\n\tGo to ChimpZone"+"\n\tGo to Reactor");
     
     function processInput(input){
-        if (input.toLowerCase() === "Cafeteria") {
+        if (input.toLowerCase() === "go to cafeteria") {
             print("\n\tYou try to step into the Cafeteria. But as you move to open the doors,\nyou flash back to the moment everyone you cared for, everyone but your distant\naquantances, died. You jump back from the door like you've been burned. You\nwon't go back there.");
 time =+ 5;
 waitThenCall(Hallway());
         }
 	    else {
-		   if (input.toLowerCase() === "chimpzone"){
+		   if (input.toLowerCase() === "go to chimpzone"){
 			   ChimpZone();
 		   }
-			   else if (input.toLowerCase() === "reactor"){
+			   else if (input.toLowerCase() === "go to reactor"){
 			    Reactor();
 			   }
-			   else {
+			   else if (input.toLowerCase() === "Stay Here") {
 				   StayHere();
 				   Hallway();
 			   }
@@ -166,5 +170,5 @@ EndGame();
 //to locationA
 function start(){
     print("\n\tThe first manned FTL test. Of course something like this would happen.\n Of course everyone else would turn into eldritch abominations the instant we entered the Void.\nOf course it seems that I could now stop time. It's obviously logical\nthat that would give me a headache, and that I couldn't hold onto it\nfor that long. It's also sensible that I seem to be psionic.");
-waitThenCall(Cafeteria());
+Cafeteria();
 }

@@ -123,6 +123,7 @@ else if (input.toLowerCase === "go to the helm"){
 waitForInput(processInput);
 }
 function Helm(){                                                            
+clear();
 	timecheck();
 print("\n\tThe Helm. Where the ship is piloted from. Normally, you'd never be here.\nIn a world where the pilot wasn't dead, you wouldn't. The helm is blinking just\n as you predicted. It's still logged in. It looks familiar to you, just as you\nhoped. You've never done this before, never trained for it, but you've helped\nthe chimps do so enough to instantly identify most of the controls, and seen\nenough of the sims the chimps trained in to have an idea of what you need to\ndo to fly the ship.\n\nWhat do you want to do? Say one of these choices:\n\tGo back to the Reactor\n\tfly the Ship");
 function processInput(input){

@@ -16,16 +16,16 @@ let gameActive = false;
 }
 function timecheck() {
 	time =+ 1;
-if (time == 6) {
+if (time === 6) {
 print("\n\tYou can feel something nasty sweep over you, like the shadow of a superpredator,\nbut with an added sense of disgust. It's searching for you, and you don't want\nto find out what will happen when it finds you. You get the sense that if you\ndon't get out now, you'll never be able to escape it completly.");
 }
-if (time == 7) {
+if (time === 7) {
 print("\n\tSuddenly, a wave of terror washes over you. Somehow, you know that it's\nmarked you. You will forever carry it's shadow. It's best that you get out of here\nquickly.");
 }
-if (time == 11) {
+if (time === 11) {
 	print("\n\tYou can feel that IT is nearly here. Your heart is pounding,\nblood racing as you are filled with terror. If you don't get out of here now,\nsomething horrible will happen to you.");
 }
-if (time == 12) {
+if (time === 12) {
 	print("\n\tSuddenly, you feel that it's too late for you. IT is here, and\nthere is nothing you can do. You can feel IT's pressure on your mind, as it begins to\ncrack. You resist, but it is futile. In less time than it takes to blink an eye,\nyou are reborn into IT's perfect slave, one who can plant the seed of the universe's\nremaking into IT's image. Three months later, humanity is dust, the electromagnetic radation\nemitted centuries ago the only hint that there was ever anything other than the\nIT's race of perfect servants in what was once known as Sol.");
 	EndGame();
 }
@@ -60,8 +60,7 @@ function Cafeteria() {
 function Hallway() {
 	timecheck();
     print("\n\tYou are in the Hallway, with the door to the cafeteria shut and sealed\n firmly behind you. From here, you can see the signs saying ChimpZone,\nCafeteria, and Reactor.");
-    print("\nWhat do you want to do next? Say one of these choices:" + "\n\tStay Here"+"\n\tGo To Cafeteria"+"\n\tGo to ChimpZone"+"\n\tGo to Reactor");
-    
+    print("\nWhat do you want to do next? Say one of these choices:" + "\n\tGo To Cafeteria"+"\n\tGo to ChimpZone"+"\n\tGo to Reactor");
     function processInput(input){
         if (input.toLowerCase() === "go to cafeteria") {
             print("\n\tYou try to step into the Cafeteria. But as you move to open the doors,\nyou flash back to the moment everyone you cared for, everyone but your distant\naquantances, died. You jump back from the door like you've been burned. You\nwon't go back there.");
@@ -73,11 +72,7 @@ waitThenCall(Hallway());
 			   ChimpZone();
 		   }
 			   else if (input.toLowerCase() === "go to reactor"){
-			    Reactor();
-			   }
-			   else if (input.toLowerCase() === "Stay Here") {
-				   StayHere();
-				   Hallway();
+			    Reactor(); 
 			   }
         }
     }
@@ -107,12 +102,8 @@ ChimpsSaved =+ 1;
 print("\n\tYou spend a few minutes cleaning out the chimps' wounds. It's soothing, and, based\non the fact that the flesh was starting to change color, you don't want to know\nwhat would've happened if you forgot to check on the chimps.");
 	ChimpZone();
 	}
-	else if (input.toLowerCase() === "hallway"){
+	else if (input.toLowerCase() === "go to hallway"){
 		Hallway();
-	}
-	else{
-	StayHere();
-	ChimpZone();
 	}
 }
 waitForInput(processInput);
@@ -120,7 +111,7 @@ waitForInput(processInput);
 function Reactor(){
 	clear();
 	timecheck();
-	print("\n\tYou are in the Reactor! This is where the ship's power is generated in\na state of the art fusion reactor, and where the ship's Void drive, currently powered down is. At least,\nthat's what you've been told. For all you know, it could be a really expensive\npeice of modern art. There should be people here, or at least what used to\nbe people, but there aren't any more. The only thing here that you haven't seen 20\ntimes before makes you feel like you got stabbed in the chest the instant you see\nit.\n\n\tA man in a security officers uniform, his body halfway transformed into one of\nthose things, half man and half monstrosity, with his left arm halfway transformed into\na tentacle. Given the gun in his hand and the way his skull looks like it exploded,\nyou now know roughly whathappened here.\nIn a daze, you do something very stupid, something that your biology teachers would\nyell at you for so much as considering, you touch the corpse. You recognize it in a heartbeat.\n\n\tSergeant Alexander Ivanov, the head of the security forces on this ship. People\nget rowdy in space, and the most he usaully has to deal with is breaking up a fistfight.\nYou feel the urge to salute to him, knowing what must have happened. You indulge\nit. It's nowhere near what he deserves, what any of the 299 ghosts that died on this\nship deserve, but something is better than nothing. And you will be that something.\n\"I'll see you on the other side in about 5 minutes if this doesn't work,\"\nYou tell him, having seen the sign leading to the helm.\n\nWhat do you want to do? Say one of these choices:\n\tStay Here\n\tGo back to the Hallway\n\tGo to the Helm");
+	print("\n\tYou are in the Reactor! This is where the ship's power is generated in\na state of the art fusion reactor, and where the ship's Void drive, currently powered down is. At least,\nthat's what you've been told. For all you know, it could be a really expensive\npeice of modern art. There should be people here, or at least what used to\nbe people, but there aren't any more. The only thing here that you haven't seen 20\ntimes before makes you feel like you got stabbed in the chest the instant you see\nit.\n\n\tA man in a security officers uniform, his body halfway transformed into one of\nthose things, half man and half monstrosity, with his left arm halfway transformed into\na tentacle. Given the gun in his hand and the way his skull looks like it exploded,\nyou now know roughly whathappened here.\nIn a daze, you do something very stupid, something that your biology teachers would\nyell at you for so much as considering, you touch the corpse. You recognize it in a heartbeat.\n\n\tSergeant Alexander Ivanov, the head of the security forces on this ship. People\nget rowdy in space, and the most he usaully has to deal with is breaking up a fistfight.\nYou feel the urge to salute to him, knowing what must have happened. You indulge\nit. It's nowhere near what he deserves, what any of the 299 ghosts that died on this\nship deserve, but something is better than nothing. And you will be that something.\n\"I'll see you on the other side in about 5 minutes if this doesn't work,\"\nYou tell him, having seen the sign leading to the helm.\n\nWhat do you want to do? Say one of these choices:\n\tGo back to the Hallway\n\tGo to the Helm");
 function processInput(input){
 	if (input.toLowerCase === "go back to the hallway"){
 		Hallway();
@@ -128,16 +119,12 @@ function processInput(input){
 else if (input.toLowerCase === "go to the helm"){
 	Helm();
 }
-else{
-StayHere();
-	Reactor();
-}
 }
 waitForInput(processInput);
 }
 function Helm(){                                                            
 	timecheck();
-print("\n\tThe Helm. Where the ship is piloted from. Normally, you'd never be here.\nIn a world where the pilot wasn't dead, you wouldn't. The helm is blinking just\n as you predicted. It's still logged in. It looks familiar to you, just as you\nhoped. You've never done this before, never trained for it, but you've helped\nthe chimps do so enough to instantly identify most of the controls, and seen\nenough of the sims the chimps trained in to have an idea of what you need to\ndo to fly the ship.\n\nWhat do you want to do? Say one of these choices:\nStay Here\nGo back to the Reactor\nfly the Ship");
+print("\n\tThe Helm. Where the ship is piloted from. Normally, you'd never be here.\nIn a world where the pilot wasn't dead, you wouldn't. The helm is blinking just\n as you predicted. It's still logged in. It looks familiar to you, just as you\nhoped. You've never done this before, never trained for it, but you've helped\nthe chimps do so enough to instantly identify most of the controls, and seen\nenough of the sims the chimps trained in to have an idea of what you need to\ndo to fly the ship.\n\nWhat do you want to do? Say one of these choices:\n\tGo back to the Reactor\n\tfly the Ship");
 function processInput(input){
 	if (input.toLowerCase === "go back to the reactor"){
                 Reactor();
@@ -145,10 +132,6 @@ function processInput(input){
 	else if (input.toLowerCase === "fly the ship"){
 		Ending();
 	}
-else if (input.toLowerCase === "stay here") {
-	stayHere();
-	Helm();
-}
 }
 waitForInput(processInput);
 }
@@ -159,7 +142,7 @@ print("\n\tThere's something that you forgot, you think to yourself as you strap
 	}
 	else if (Magic === 1){
 if(time === 6){
-	print("\n\tYou strap into the pilots chair, and begin to look over the controls. It's\nfar more familair than you expected. It doesn't feel like this is the first\ntime you've flown a ship. It feels like the thousandth. You can here something\ncalling to you in the distance, and feel the shadow of something Other that has\npassed over the ship recently. The sound is the most beautiful thing you've\never heard, and the shadow makes you recoil in horror. You can feel the shadow\ntrying to taint you, but you were too quick for it to get more than a passing\nglimpse into your soul.\n\n\tYou fly the ship through the Void with the efficency of a butterfly crossing\nthe Sahara. It only takes you two minutes to get out of the Void, as you take a\npath full of twists and turns. You punch through into realspace at the ships\noriginal destination with a feeling of disappointment that is shortly followed\nby the same feeling you get from stepping out of a muddy pit. Both the shadow and\nthe song are weaker here, but the shadow is more weakened. You punch in the com and\ncall out to the ships around you. You were succesful beyond all expectations\nat piloting the ship. Now it's time to figure out what happened to everyone else.\n\n\tTwo weeks later, you are teaching humanity's first course on psionics. It turns out\nthat cryostasis, at least when combined with some drugs, protects from the Shadow's influence.");
+	print("\n\tYou strap into the pilots chair, and begin to look over the controls. It's\nfar more familair than you expected. It doesn't feel like this is the first\ntime you've flown a ship. It feels like the thousandth. You can here something\ncalling to you in the distance, and feel the shadow of something Other that has\npassed over the ship recently. The sound is the most beautiful thing you've\never heard, and the shadow makes you recoil in horror. You can feel the shadow\ntrying to taint you, but you were too quick for it to get more than a passing\nglimpse into your soul.\n\n\tYou fly the ship through the Void with the efficency of a butterfly crossing\nthe Sahara. It only takes you two minutes to get out of the Void, as you take a\npath full of twists and turns. You punch through into realspace at the ships\noriginal destination with a feeling of disappointment that is shortly followed\nby the same feeling you get from stepping out of a muddy pit. Both the Shadow and\nthe Song are weaker here, but the Shadow is more weakened. You punch in the com and\ncall out to the ships around you. You were succesful beyond all expectations\nat piloting the ship. Now it's time to figure out what happened to everyone else.\n\n\tTwo weeks later, you are teaching humanity's first course on psionics. It turns out\nthat cryostasis, at least when combined with some drugs, protects from the Shadow's influence.");
 }else{
 print("\n\tYou hurridly strap into the pilot's chair and dash through the Void,\nhoping As you escape the Void, you can feel the Shadow's taint on you. You\nwill be able to purge most of it, but some trace will haunt you for the rest of your days.");
 }

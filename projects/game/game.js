@@ -101,7 +101,7 @@ function Hallway() {
         if (input.toLowerCase() === "Cafeteria") {
             print("You try to step into the Cafeteria. But as you move to open the doors, you flash back to the moment everyone you cared for, everyone but your distant aquantances, died. You jump back from the door like you've been burned. You won't go back there.");
 time =+ 5;
-waitThenCall(Hallway);
+waitThenCall(Hallway());
         }
 	    else {
 		   if (input.toLowerCase() === "chimpzone"){
@@ -144,7 +144,7 @@ ChimpsSaved =+ 1;
 print("\nYou spend a few minutes cleaning out the chimps' wounds. It's soothing, and, based\non the fact that the flesh was starting to change color, you don't want to know\nwhat would've happened if you forgot to check on the chimps.");
 	ChimpZone();
 	}
-	else if (input.toLowerCase() === "Hallway"){
+	else if (input.toLowerCase() === "hallway"){
 		Hallway();
 	}
 	else{
@@ -199,7 +199,7 @@ if(time === 6){
 print("\n\tYou hurridly strap into the pilot's chair and dash through the Void,\nhoping As you escape the Void, you can feel the Shadow's taint on you. You\nwill be able to purge most of it, but some trace will haunt you for the rest of your days.");
 }
 } else{
-print("\n\tYou don't even strap into the pilot's chair. You don't have time for that.\nYou push the ship hard and fast as you dash out of the Void. You are out in 30 seconds.\nYou can feel that any longer, and you would've suffered a fate too horrible for\na human mind to imagine. The ships behind you see a closing portal cut off a\ntentacle. Humanity abandons the Void as a method of travel and classifies the\nincident. You spend the rest of your days as a paranoid wreck, always looking over\nyour shoulder. Humanity barely discovers FTL in time to prevent World War III,\nand billions die before then. Earth is ruined, and humanity abandons it's homeworld,\ncrawling through the dark between the stars in ships barely faster than light\n.");
+print("\n\tYou don't even strap into the pilot's chair. You don't have time for that.\nYou push the ship hard and fast as you dash out of the Void. You are out in 30 seconds.\nYou can feel that any longer, and you would've suffered a fate too horrible for\na human mind to imagine. The ships behind you see a closing portal cut off a\ntentacle. Humanity abandons the Void as a method of travel and classifies the\nincident. You spend the rest of your days as a paranoid wreck, always looking over\nyour shoulder. Humanity barely discovers FTL in time to prevent World War III,\nand billions die before then. Earth is ruined, and humanity abandons it's homeworld,\ncrawling through the dark between the stars in ships barely faster than light.");
 }
 EndGame();
 }

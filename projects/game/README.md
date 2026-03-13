@@ -3,11 +3,11 @@
 
 ## Global Variables
 
-Time= The story's progress bar towards the worst ending, high= bad.
+Time= The story's progress bar towards the worst ending, high= bad. It also triggers cut scenes at pre determined levels before then.
 
-ChimpsSaved?=if you left the monkeys behind, you get torn apart by insane chimps
+ChimpsSaved?=if you left the monkeys behind, you get torn apart by insane chimps if you try to pilot the ship. It also determines whether the help the chimps option appears.
 
-PsionicsUsed= Did you use psionics, influences ending
+Magic= Did you use maigc, influences ending
 
 ## Explanation of the setting.
 
@@ -175,7 +175,11 @@ monsters. Those are also a promblem.
 
 ## Story Summary
 
-A man tries to survive a tragedy aboard a spaceship, and reach the pilots helm to escape the Void. There are multiple endings.
+A man tries to survive a tragedy aboard a spaceship, and reach the pilots helm to escape the Void. There are multiple endings, Some good and some not so good.
+
+The game starts in the cafeteria, where you make a choice between psionics and running. Running leads to, at best, a bad ending where humanity survives by the skin of it's teeth. You have to help the chimps to get a decent end. As time progresses, the story starts to unfold and you get locked out of the better endings. 
+
+If you linger to long, you trigger the really bad ending, one where humanity doesn't make it.
 
 ### Ending1- Good Ending
 

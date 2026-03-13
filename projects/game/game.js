@@ -8,7 +8,7 @@ let Magic = 0;
 
 //If you need, add any "helper" functions here
 function waitThenCall(target){
-	console.log(waitThenCall activated);
+	console.log("waitThenCall activated");
 	setTimeout(target,2000);
 }
 
@@ -16,7 +16,7 @@ function EndGame() {
 let gameActive = false;
 }
 function timecheck() {
-	console.log(timecheck activated);
+	console.log("timecheck activated");
 	time =+ 1;
 if (time == 6) {
 print("\n\tYou can feel something nasty sweep over you, like the shadow of a superpredator,\nbut with an added sense of disgust. It's searching for you, and you don't want\nto find out what will happen when it finds you. You get the sense that if you\ndon't get out now, you'll never be able to escape it completly.");
@@ -31,11 +31,10 @@ if (time == 12) {
 	print("\n\tSuddenly, you feel that it's too late for you. IT is here, and\nthere is nothing you can do. You can feel IT's pressure on your mind, as it begins to\ncrack. You resist, but it is futile. In less time than it takes to blink an eye,\nyou are reborn into IT's perfect slave, one who can plant the seed of the universe's\nremaking into IT's image. Three months later, humanity is dust, the electromagnetic radation\nemitted centuries ago the only hint that there was ever anything other than the\nIT's race of perfect servants in what was once known as Sol.");
 	EndGame();
 }
-waitForInput(processInput);
 }
 
 function StayHere() {
-	console.log(stayhere activated);
+	console.log("stayhere activated");
 print("\n\tYou just stand there for a few minutes. Say one of the choices listed above.");
 timecheck();
 }

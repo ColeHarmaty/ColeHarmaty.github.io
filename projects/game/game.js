@@ -13,9 +13,8 @@ function waitThenCall(target){
 
 function EndGame() {
 print("GAME OVER");
-	let gameActive = false;
-	throw new Error("Hope this works");
-	print("GAME OVER");
+	gameActive = false;
+throw new Error("This error is intentional and a normal part of code execution, it terminates the program.");
 }
 function timecheck() {
 	time++;

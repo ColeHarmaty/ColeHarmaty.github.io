@@ -1,10 +1,8 @@
 let canvas = document.getElementById("canvas1");
 let ctx = canvas.getContext("2d");
-function Run1() {
 for (let y = 0; y <= 200; y = y + 100) {
 for (let x = 0; x <= 700; x = x + 100) {
-ctx.fillRect(x, y, 10, 70);
-}
+ctx.fillRect(x, y, 70, 20);
 }
 }
 
@@ -12,16 +10,33 @@ ctx.fillRect(x, y, 10, 70);
 
 canvas = document.getElementById("canvas2");
 ctx = canvas.getContext("2d");
-
+for (let y = 100; y <= 700; y = y + 100) {
+	for (let x = 0; x < y; x = x + 100) {
+ctx.fillRect(x, y, 70, 20);
+	}
+}
 //fill in code for canvas2 here
 
 canvas = document.getElementById("canvas3");
 ctx = canvas.getContext("2d");
-
+for (let y = 0; y <= 700; y = y + 100) {                                        
+for (let x = 0; x <= 700; x = x + 100) {                                        
+if (x != y) {
+ctx.fillRect(x, y, 70, 20);                                                     
+}
+}
+}
 //fill in code for canvas3 here
 
 canvas = document.getElementById("canvas4");
 ctx = canvas.getContext("2d");
-
-//fill in code for canvas4 here
-
+for (let y = 0; y <= 700; y = y + 200) {
+for (let x = 0; x <= 700; x = x + 200) {
+ctx.fillRect(x, y, 100, 100);            
+}
+}
+for (let y = 100; y <= 700; y = y + 200) {                                        
+for (let x = 100; x <= 700; x = x + 200) {                                        
+ctx.fillRect(x, y, 100, 100);                                                   
+}                                                                               
+}

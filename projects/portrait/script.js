@@ -1,15 +1,5 @@
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
-//hair
-//creates an individaul hair
-ctx.beginPath();
-	ctx.moveTo(380, 380);
-	ctx.lineTo(480, 480);
-	ctx.lineTo(500, 480);
-	ctx.lineTo(400, 380);
-	ctx.closePath();
-	ctx.fill();
-ctx.stroke();
 //top of head
 ctx.beginPath();
 ctx.moveTo(2500, 1000);
@@ -20,6 +10,15 @@ ctx.fill();
 //midpart of head
 ctx.fillStyle = "#CFA185";
 ctx.fillRect(600, 1000, 1800, 1000);
+//neck
+ctx.fillRect(1000, 2000, 1000, 1000);
+//shirt top
+ctx.fillStyle = "#D2D0C2";
+ctx.fillRect(0, 3000, 3000, -700);
+//shirt gap
+ctx.fillStyle = "#FF00FF";
+ctx.fillRect(500, 0, 200, -200);
+ctx.fillRect(2000, 0, 200, -200);
 //facial stuble
 ctx.fillStyle = "#BF9175";
 ctx.fillRect(600, 1500, 1800, 50);
@@ -87,3 +86,11 @@ ctx.stroke();
 //nose bridge glasses
 ctx.fillStyle = "#000000";
 ctx.fillRect(1150, 1200, 700, 40);
+//nose bridge face side
+ctx.fillRect(600, 1200, 200, 40);
+ctx.fillRect(2200, 1200, 200, 40);
+//hair down sides
+ctx.fillRect(600, 1000, 200, 100);
+ctx.fillRect(2200, 1000, 200, 100);
+//cowlick
+ctx.fillRect(1600, 500, 400, 200);

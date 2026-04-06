@@ -33,6 +33,18 @@ ctx.fill();
 ctx.fillStyle = "#000000"
 ctx.fillRect(800, 1100, 400, 50);
 ctx.fillRect(1800, 1100, 400, 50);
+//nose shadows
+ctx.fillStyle = "#000000";
+ctx.beginPath();
+ctx.moveTo(1400, 1350);
+ctx.arc(1350, 1350, 50, 0, Math.PI, true);
+ctx.closePath();
+ctx.fill();
+ctx.beginPath();                                                                
+ctx.moveTo(1600, 1350);                                                          
+ctx.arc(1550, 1350, 50, 0, Math.PI, true);                                       
+ctx.closePath();                                                                
+ctx.fill();
 //lips
 ctx.fillStyle = "#CE7C74";
 ctx.fillRect(1250, 1550, 500, 100);

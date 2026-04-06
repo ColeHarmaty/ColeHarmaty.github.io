@@ -20,6 +20,12 @@ ctx.fill();
 //midpart of head
 ctx.fillStyle = "#CFA185";
 ctx.fillRect(600, 1000, 1800, 1000);
+//facial stuble
+ctx.fillStyle = "#BF9175";
+ctx.fillRect(600, 1500, 1800, 50);
+ctx.fillRect(600, 1500, 200, 400);
+ctx.fillRect(2200, 1500, 200, 400);
+ctx.fillRect(1200, 1100, 600, 50);
 //hair
 ctx.beginPath();
 ctx.moveTo(2500, 1000);
@@ -71,4 +77,13 @@ ctx.beginPath();
 ctx.arc(1000, 1300, 50, 0, 2 * Math.PI);                                        
 ctx.fillStyle = "#000000";                                                      
 ctx.fill();
-
+//glasses circle
+ctx.beginPath();
+ctx.arc(1000, 1300, 200, 0, 2 * Math.PI);
+ctx.stroke();
+ctx.beginPath();
+ctx.arc(2000, 1300, 200, 0, 2 * Math.PI);
+ctx.stroke();
+//nose bridge glasses
+ctx.fillStyle = "#000000";
+ctx.fillRect(1150, 1200, 700, 40);

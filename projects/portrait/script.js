@@ -15,10 +15,6 @@ ctx.fillRect(1000, 2000, 1000, 1000);
 //shirt top
 ctx.fillStyle = "#D2D0C2";
 ctx.fillRect(0, 3000, 3000, -700);
-//shirt gap
-ctx.fillStyle = "#FF00FF";
-ctx.fillRect(500, 0, 200, -200);
-ctx.fillRect(2000, 0, 200, -200);
 //facial stuble
 ctx.fillStyle = "#BF9175";
 ctx.fillRect(600, 1500, 1800, 50);

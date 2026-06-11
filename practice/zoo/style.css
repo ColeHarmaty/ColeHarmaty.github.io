@@ -5,10 +5,14 @@ table, td, tr,th{
   }
   h1{
 	  text-decoration: underline;
-	  background-color: Chartreuse
+	  background-color: Chartreuse;
+	  padding: 10px;
+	  padding-left: 5px;
+	  margin-top: 10px;
   }
  body{
  background-color: DarkGreen;
+font-family: "Times New Roman", serif;
  }
  #info{
 	 background-color: Green;

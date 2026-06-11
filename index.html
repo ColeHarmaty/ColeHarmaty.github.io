@@ -1,32 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">	
+<html lang="en">
 <head>
-	<link rel="icon" href="favicon.png" type="image/png">
-<title>Cole Homepage</title>
-<script src="js/validate.js">
-</script>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="icon" href="" type="image/png">
+    <title>About Me</title>
+<style>
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 8fr 1fr 1fr;
+}
+.top {
+grid-column: 1/6;
+grid-row: 1/2;
+text-align: center;
+}
+.button1 {
+	grid-column-start: 1;
+		grid-column-end: span 1;
+		grid-row: 2/3;
+place-self: center;
+}
+
+.button2 {
+        grid-column-start: 2;
+                grid-column-end: span 1;
+		grid-row: 2/3;
+place-self: center;
+}
+.button3 {                                                                      
+        grid-column-start: 3;                                                   
+                grid-column-end: span 1;                                        
+                grid-row: 2/3;                                                  
+place-self: center;                                                             
+}                                                            
+.button4 {
+        grid-column-start: 4;
+                grid-column-end: span 1;
+                grid-row: 2/3;
+place-self: center;
+}       
+.button5 {
+        grid-column-start: 5;
+                grid-column-end: span 1;
+                grid-row: 2/3;
+place-self: center;
+}
+.bigimage {
+	grid-column: 1/6;
+	grid-row: 3/4;
+}
+.text {
+grid-column: 1/6;
+grid-row-start: 4;
+grid-row-end: span 1;
+place-self: center;
+}
+.BigLink {
+place-self: center;
+grid-column: 1/6;                                                               
+grid-row-start: 5;                                                              
+grid-row-end: span 1;
+}
+</style>
 </head>
 <body>
-<h1>All About Me</h1>
-<p>This website will be all about my academics. </p><u><A HREF="practice/index.html">Here is the link to my practice outline.</A></u>
-<p>Albert Einstein once said: </p><q cite="https://www.goodreads.com/quotes/942-two-things-are-infinite-the-universe-and-human-stupidity-and">Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.</q>
-<img src=”images/colepicturelarge.jpg”
-     alt="A picture of me"
-     usemap="#got you">
-<map name="#got you">
-	<area shape="rect" title="picture_of_me" cords="0,0,417,313" href="https://coleharmaty.github.io/index_links/got_you.html">
-</map>
-<!--
-srcset="images/colepicturesmall.jpeg 320w,
-images/colepicturemedium.jpg 640w,
-images/colepicturelarge.jpg 1024w"
-sizes="(max-width: 320px) 95vw,
-(max-width: 640px) 45vw,
-30vw"
--->
+    <div class="grid">
+	    <div class="top">
+		    <h1>About Me</h1>
+	    </div>
+	    <div class="button1" class="subtitle">
+		    <h2> <a href="index.html">About Me</a></h2>
+	    </div>
+   <div class="button2" class="subtitle">                                                
+	   <h2><a href="page2.html">Web Design</a></h2>  
+   </div>
+   <div class="button3" class="subtitle">
 
-<!-- I took this picture myself.-->
-<p>This is a picture of me.</p>
+           <h2><a href="page3.html">Math</a></h2>
+   </div>
+   <div class="button4" class="subtitle">
+
+           <h2><a href="page4.html">Engineering</a></h2>
+   </div>
+   <div class="button5" class="subtitle">
+
+           <h2><a href="page5.html">My CAD Designs</a></h2>
+   </div>
+   <div class="bigimage">
+	    <img src="bigimage.jpg" alt="placeholder" width="100%" height="100%">
+    </div>
+    <div class="text">
+	    <h2>Who am I?</h2>
+	    <p> I am Cole Harmaty. I am a student currently studying at Arlington Tech. I have taken many college courses over the past few years, and done quite a few projects for them. This portfolio is meant to show some of them off.</p>
+    </div>
+   <!-- <div class="BigLink">
+	    <h1><a href="page2.html">Click here to view my projects</a></h1>
+   </div> -->
+    </div>
 </body>
 </html>

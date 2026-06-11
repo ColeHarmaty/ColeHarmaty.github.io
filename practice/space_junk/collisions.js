@@ -8,8 +8,10 @@ function clickHandler(e){
 
     //TODO: write some code here that checks whether
     //(mouseX, mouseY) is inside j
-
-  }
+if (junk_min_x <= mouseX && mouseX <= junk_max_x && junk_min_y <= mouseY && mouseY <= junk_max_y) {
+j.alive = false; 
+}
+}
 }
 
 canvas.addEventListener('click', clickHandler);
@@ -21,16 +23,20 @@ function checkCollisions(){
     for(const j of junk) {
         for(const s of ships){
             if(j.alive && s.alive){
-                junk_min_x = j.x - 12*j.size;
-                junk_max_x = j.x + 12*j.size;
-                junk_min_y = j.y - 12*j.size;
-                junk_max_y = j.y + 12*j.size;
+                jminx = j.x - 12*j.size;
+                jmaxx = j.x + 12*j.size;
+                jminy = j.y - 12*j.size;
+                jmaxy = j.y + 12*j.size;
 
-                ship_min_x = s.x - 15*s.size;
-                ship_max_x = s.x + 15*s.size;
-                ship_min_y = s.y - 15*s.size;
-                ship_max_y = s.y + 15*s.size;
-
+                sminx = s.x - 15*s.size;
+                smaxx = s.x + 15*s.size;
+                sminy = s.y - 15*s.size;
+                smaxy = s.y + 15*s.size;
+if(smaxx > jminx && sminx < jmaxx &&
+	smaxy > jminy && sminy < jmaxy
+) {
+	j.alive = false;
+	s.alive = false;
             }
         }
     }
